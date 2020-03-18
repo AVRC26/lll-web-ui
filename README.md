@@ -1,2 +1,1 @@
-# blog.avrc26.com
-This repo is for AVRC26's creations.
+# Hello World! [lll.org.in](https://lll.org.in)
