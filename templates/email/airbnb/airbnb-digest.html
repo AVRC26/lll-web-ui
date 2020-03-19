@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>What do new guest standards mean for hosts?</title>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+        xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <head>
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <style type="text/css">
+            @media screen {
+                @font-face {
+                    font-family: 'Circular';
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-a952ee2c4bd292728a2439f767e3a260.eot");
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-1f5a0275bdd69dbbeadffab401c698a2.woff2") format("woff2"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-7f15c543c7006815105f5df71824836d.woff") format("woff"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-98e37c7514bb7096658cabbf6d43e783.svg") format("svg");
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Circular';
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-35e1cf57d93dc4eb3db11cc2448cb91f.eot");
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-4909b413294f9048153d6dee23438b24.woff2") format("woff2"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-1db902f5b85bbb0964e2994434edbe16.woff") format("woff"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-0d9eb203b260869dc2470ae35162fc1e.svg") format("svg");
+                    font-weight: normal;
+                    font-style: italic;
+                }
+
+                @font-face {
+                    font-family: 'Circular';
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-3d9fa9ce4a6feb3bb7eab142470dd7d3.eot");
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-42f300daf805956564cdf1fcb56d2c6f.woff2") format("woff2"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-1cf016706a26eb4bf820dca2dca82c9f.woff") format("woff"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-ea56415eb35466568fd22e41c7352796.svg") format("svg");
+                    font-weight: 300;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Circular';
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-3d9fa9ce4a6feb3bb7eab142470dd7d3.eot");
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-42f300daf805956564cdf1fcb56d2c6f.woff2") format("woff2"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-1cf016706a26eb4bf820dca2dca82c9f.woff") format("woff"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-ea56415eb35466568fd22e41c7352796.svg") format("svg");
+                    font-weight: 200;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Circular';
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-c4da182b004982220ffd5caf5555cf2d.eot");
+                    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-7ceb09864a7ed03b9c10cfa2f7281315.woff2") format("woff2"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-eacfa7beaa999351b4f89935e0126b19.woff") format("woff"),
+                        url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-190e0f26359cdc7d8d093e1a04983ed3.svg") format("svg");
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                @font-face {
+                    font-family: 'Circular Black';
+                    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-ab30a4ec2fa5ec7fa296e75df5cb2ad9.eot");
+                    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-ab30a4ec2fa5ec7fa296e75df5cb2ad9.eot?#") format("eot"),
+                        url("https://a1.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-6c7330bc572333f4258c6d546f7a1b1a.woff") format("woff"),
+                        url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-1a567149aaf7713739d485ea003a67b6.woff2") format("woff2"),
+                        url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-c10c36404923b10fc45cdf9098617c4a.ttf") format("truetype"),
+                        url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-22f8e76a70d586a3893d0afecd1accc0.svg") format("svg");
+                }
+
+            }
+        </style>
+
+        <style type="text/css">
+            /* ====[ GENERAL STYLES ]==== */
+            table,
+            td {
+                mso-table-lspace: 0pt !important;
+                mso-table-rspace: 0pt !important;
+            }
+
+            * {
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            *[x-apple-data-detectors],
+            .x-gmail-data-detectors,
+            .x-gmail-data-detectors *,
+            .linkfix a,
+            .linkfix span {
+                border-bottom: 0 !important;
+                cursor: default !important;
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size: inherit !important;
+            }
+
+            /* Remove font-family inherit when using webfont hack */
+            #outlook a {
+                padding: 0
+            }
+
+            div[style*="margin: 16px 0"] {
+                margin: 0 !important;
+            }
+
+            /* Centers email on Android 4.4 */
+            div {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .ExternalClass * {
+                line-height: 100%;
+            }
+
+            div,
+            p,
+            a,
+            li {
+                -webkit-text-size-adjust: none;
+                -ms-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+                letter-spacing: normal;
+            }
+
+            img {
+                outline: none;
+                text-decoration: none;
+                -ms-interpolation-mode: bicubic;
+                display: block;
+            }
+
+            a img {
+                border: none;
+            }
+
+            sup {
+                vertical-align: super;
+                font-size: 65%;
+                line-height: 0.5em;
+            }
+
+            a,
+            a:link,
+            a:visited {
+                text-decoration: none;
+            }
+
+            .block20,
+            .para20 {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            u+#body a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+            }
+
+            td.rounded-image>a>img {
+                border-radius: -webkit-border-radius: 3px;
+                border-radius: 3px;
+            }
+        </style>
+
+        <style type="text/css">
+            /* ====[ MOBILE STYLES ]==== */
+            @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+                .email-container {
+                    min-width: 320px !important;
+                }
+            }
+
+            @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+                .email-container {
+                    min-width: 375px !important;
+                }
+            }
+
+            @media only screen and (min-device-width: 414px) {
+                .email-container {
+                    min-width: 414px !important;
+                }
+            }
+
+            @media screen and (max-width: 480px),
+            screen and (max-device-width: 480px) {
+                .fluid {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+
+                .drop {
+                    display: table-header-group;
+                }
+
+                .hide {
+                    display: none !important;
+                    visibility: hidden;
+                    max-height: 0px;
+                    overflow: hidden;
+                }
+
+                .stack-column,
+                .stack-column-center {
+                    display: block !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    direction: ltr !important;
+                }
+
+                .stack-column-center {
+                    text-align: center !important;
+                }
+
+                .center-on-narrow {
+                    text-align: center !important;
+                    display: block !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    float: none !important;
+                }
+
+                .h1m {
+                    font-size: 42px !important;
+                    line-height: 42px !important
+                }
+
+                .h2m {
+                    font-size: 18px !important;
+                }
+
+                .h3m {
+                    font-size: 15px !important;
+                }
+
+                .header-body-text {
+                    font-size: 14px !important;
+                    line-height: 16px !important;
+                }
+
+                .p40,
+                .block40 {
+                    padding-left: 40px !important;
+                    padding-right: 40px !important;
+                }
+
+                .p30,
+                .block30 {
+                    padding-left: 30px !important;
+                    padding-right: 30px !important;
+                }
+
+                .p20,
+                .block20 {
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                }
+
+                .p15,
+                .block15 {
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                }
+
+                .p10,
+                .block10 {
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+                }
+
+                .p5,
+                .block5 {
+                    padding-left: 5px !important;
+                    padding-right: 5px !important;
+                }
+
+                .p0 {
+                    padding: 0 !important;
+                }
+            }
+        </style>
+
+        <style type="text/css">
+            /* Progressive enhancement */
+            .button-td,
+            .button-a {
+                transition: all 100ms ease-in;
+            }
+
+            .button-td:hover,
+            .button-a:hover {
+                background: #3495f6 !important;
+            }
+
+            /* Brand specific */
+            .circular {
+                font-family: 'Circular', Helvetica, Arial, sans-serif !important;
+            }
+
+            .circular_light {
+                font-family: 'Circular Light', Helvetica, Arial, sans-serif !important;
+            }
+
+            .circular_black {
+                font-family: 'Circular Black', Helvetica, Arial, sans-serif !important;
+            }
+
+            .pink-btn:hover {
+                background-color: #ff464c !important;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+        </style>
+        <!--[if gte mso 9]>
+    <style>
+        sup, sub { font-size:100% !important; line-height:1em !important; font-size:100%; line-height:1em; }
+    </style>
+<![endif]-->
+
+        <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+<![endif]-->
+
+
+
+        <!-- MASTER AMPSCRIPT START -->
+
+
+
+
+        <!-- MASTER AMPSCRIPT END -->
+
+        <!-- CONTENT DATA EXTENSION -->
+
+        <!-- CONTENT DATA EXTENSION END -->
+
+
+        <title>What do new guest standards mean for hosts?</title>
+    </head>
+
+    <body id="body" width="100%" bgcolor="#ffffff" style="margin: 0; padding:0; mso-line-height-rule: exactly">
+        <div
+            style="display:none;font-size:1px;color:#484848;line-height:1px;font-family:Helvetica, Arial, sans-serif;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">
+            Answers to your questions, product updates, and more host news </div>
+        <center style="width: 100%; background:#ffffff">
+            <!-- INSERT CONTENT HERE -->
+            <div style="max-width: 640px; margin: auto;" class="email-container">
+                <!--[if mso]>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="640" align="center">
+            <tr>
+            <td>
+        <![endif]-->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
+                    style="max-width: 640px;">
+                    <!-- Body -->
+
+                    <tr>
+                        <td style="padding: 0; text-align: center">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"
+                                width="100%" style="max-width:640px;">
+                                <tr>
+                                    <td style="background-color:#63c1b9;" align="center" valign="top" width="100%">
+
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding:38px 0 0 0" valign="top" align="center">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <!-- * LOGO START * -->
+
+                                                            <td align="center"><a
+                                                                    href="https://click.airbnbmail.com/?qs=2ad9ecf459fd66253199541949add2d27e087b2252c203d037b5ba751a3c32739a375c7fb306e99c5066dc7d7e084761e1cafb1b24ef814b"
+                                                                    style="display: block;"><img alt="Airbnb" width="40"
+                                                                        src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/tl-logo.png"
+                                                                        style="display: block; border: 0; color: #FF5A5F; font-size: 20px; font-weight: bold; font-family: sans-serif;" /></a>
+                                                            </td>
+
+                                                            <!-- * LOGO END * -->
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" align="center" class=""
+                                                    style="padding:55px 0 0 0; font-family: Helvetica, Arial, sans-serif; text-align: center; font-size: 19px; line-height: 19px; color: #ffffff; font-weight:300; background-color:#63c1b9;">
+                                                    <p style="margin: 0; letter-spacing:3px; text-transform:uppercase;">
+                                                        April</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" align="center" class="h1m"
+                                                    style="padding:19px 15px 0 15px; font-family: Helvetica, Arial, sans-serif; text-align: center; font-size: 72px; line-height: 74px; color: #ffffff; font-weight:700; background-color:#63c1b9;">
+                                                    <p
+                                                        style="margin: 0; letter-spacing:-1px; text-transform:uppercase;">
+                                                        Host News </p>
+                                                </td>
+                                            </tr>
+
+
+
+
+                                            <tr>
+                                                <td style="background-color:#63c1b9;" align="center" valign="top">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="80%">
+                                                        <tr>
+                                                            <td class="" valign="top" align="center"
+                                                                style="padding:24px 0 0 0; font-family: Helvetica, Arial, sans-serif; text-align: center; font-size: 19px; line-height: 24px; color: #ffffff; font-weight:300; ">
+                                                                <p style="margin: 0; letter-spacing:0px">Introducing
+                                                                    Airbnb Answers—a new, regular feature of Host News
+                                                                    where we answer your top-voted questions.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+
+                                    </td>
+                                </tr>
+
+                                <!-- * BEGIN HEADER IMAGE * -->
+
+                                <tr>
+
+                                    <td valign="top" align="center" class="fluid"
+                                        style="padding: 0px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; background-color:#63c1b9; font-weight:700">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%">
+                                            <tr>
+                                                <td style="padding-top:16px;" valign="top" align="center"><img
+                                                        src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/April-newsletter-banner.jpg"
+                                                        width="640" height="429" border="0" class="fluid"
+                                                        style="display:block; margin:0; max-width:100%;" /></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                </tr>
+
+                                <!-- * END HEADER IMAGE * -->
+
+
+                                <tr>
+                                    <td class="block20" align="center" valign="top" width="100%">
+
+
+
+                                        <!-- * SUBTOPIC CATEGORY MODULE * -->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                            align="center" width="100%" style="max-width:548px;">
+                                            <tr>
+                                                <!-- * Subtopic - Headline * -->
+                                                <td valign="top" align="left" class="circular"
+                                                    style="padding: 15px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+                                                        <tr>
+                                                            <td width="32" valign="middle" align="left"><img
+                                                                    src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/hand_2x.png"
+                                                                    width="32" height="32" border="0"
+                                                                    style="display:block; margin:0;" /></td>
+                                                            <td width="15"></td>
+                                                            <td valign="top" align="left">
+                                                                <p
+                                                                    style="margin: 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                    Answers</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- * End Subtopic - Headline * -->
+                                            </tr>
+
+                                            <tr>
+                                                <!-- * Subtopic - Body * -->
+                                                <td valign="top" align="left" class="circular"
+                                                    style="padding: 24px 0 0 0;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                <p style="margin: 0;">You asked about new guest
+                                                                    standards</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="padding:4px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:100">
+                                                                <p style="margin: 0;">We're enforcing stronger community
+                                                                    standards to help ensure guests treat your home the
+                                                                    way you would, and to clarify what happens if they
+                                                                    don't.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- * Subtopic 1 - Button * -->
+                                                            <td valign="top" align="left"
+                                                                style="font-size:0; padding:17px 0 0 0">
+                                                                <table role="presentation" border="0" align="left"
+                                                                    cellpadding="0" cellspacing="0" class="fluid">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="background-color:#FF5A5F;border-radius:4px;-webkit-border-radius:4px; -moz-border-radius:4px;">
+                                                                            <table role="presentation" width="100%"
+                                                                                border="0" cellspacing="0"
+                                                                                cellpadding="0">
+                                                                                <tr>
+                                                                                    <td class="pink-btn h2m circular"
+                                                                                        height="45"
+                                                                                        style="padding-left: 25px; padding-right: 25px; text-align: center; color: #FF5A5F; font-size:18px; line-height:24px; text-decoration: none; font-family: Helvetica, Arial, sans-serif;">
+                                                                                        <a href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd662577c591ed46b7e5bfbe6230f62d6e545f8400c798b5f7c187ea949563c181b45ef565605cf95406e5faa01caf84650275"
+                                                                                            style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: #ffffff; text-decoration: none;"
+                                                                                            target="_blank">See what’s
+                                                                                            changing</a>
+
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <!-- * End Subtopic 1 - Button * -->
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- * End Subtopic - Body * -->
+                                            </tr>
+                                        </table>
+                                        <!-- * END SUBTOPIC CATEGORY MODULE * -->
+
+                                        <!-- * SUBTOPIC MODULE * -->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                            align="center" width="100%" style="max-width:548px;">
+                                            <tr>
+                                                <!-- * Subtopic - Body * -->
+                                                <td valign="top" align="left" class="circular"
+                                                    style="padding: 40px 0 0 0;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                <p style="margin: 0;">In case you missed it</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="padding:4px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                <p style="margin: 0;">If you weren’t able to tune in to
+                                                                    our recent Host Q&A with CEO and Head of Community
+                                                                    Brian Chesky, we’ve got you covered.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="padding:12px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                <p style="margin: 0;"><a
+                                                                        style="color:#FF5A5F; text-decoration:none"
+                                                                        href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd6625831b919f297d75f35334796f63632b5550dcd9f46eabd1916cd36507f6442bf1813c3e9c376cc8cbc0af4f0482f3d81f"
+                                                                        target="_blank">Check out the recap</a></p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- * End Subtopic - Body * -->
+                                            </tr>
+                                        </table>
+                                        <!-- * END SUBTOPIC MODULE * -->
+
+
+
+
+                                        <!-- * DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                            style="max-width:548px;">
+                                            <!-- * Divider * -->
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="25" style="border-bottom: 1px solid #E5E5E5;">
+                                                                &nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="25">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- * End Divider * -->
+                                        </table>
+                                        <!-- * END DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+
+
+
+                                        <!-- * SUBTOPIC CATEGORY MODULE * -->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                            align="center" width="100%" style="max-width:548px;">
+                                            <tr>
+                                                <!-- * Subtopic - Headline * -->
+                                                <td valign="top" align="left" class="circular"
+                                                    style="padding: 15px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+                                                        <tr>
+                                                            <td width="32" valign="middle" align="left"><img
+                                                                    src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/book_2x.png"
+                                                                    width="32" height="32" border="0"
+                                                                    style="display:block; margin:0;" /></td>
+                                                            <td width="15"></td>
+                                                            <td valign="top" align="left">
+                                                                <p
+                                                                    style="margin: 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                    Product updates</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- * End Subtopic - Headline * -->
+                                            </tr>
+                                            <tr>
+                                                <!-- * Subtopic - Image * -->
+
+                                                <td valign="top" align="center" class="circular"
+                                                    style="padding: 18px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+
+                                                        <tr>
+                                                            <td class="rounded-image" valign="top" align="center">
+                                                                <a href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd662502008b85b949e999e7aa47cb6fbd99a54f7ea28994f1178976d426e0657b8d9ae631386014150506ce7c1f35c2132079"
+                                                                    target="_blank">
+
+                                                                    <img class="fluid"
+                                                                        src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/April-newsletter-Subtopic6.jpg"
+                                                                        width="548" border="0"
+                                                                        style="display:block; margin:0; max-width:100%;" /></a>
+                                                            </td>
+
+                                                        </tr>
+
+
+
+                                                    </table>
+                                                </td>
+
+
+                                                <!-- * End Subtopic - Image * -->
+                                            </tr>
+                                            <tr>
+                                                <!-- * Subtopic - Body * -->
+                                                <td valign="top" align="left" class="circular"
+                                                    style="padding: 24px 0 0 0;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                <p style="margin: 0;">A better listing in 5 minutes</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td valign="top" align="left" class="circular"
+                                                                style="padding:4px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                <p style="margin: 0;">In February we launched new
+                                                                    property types, amenities, and check-in details. By
+                                                                    answering a few questions about your space, you can
+                                                                    attract more guests who will love your home.</p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <!-- * Subtopic 3 - Button * -->
+
+                                                            <td valign="top" align="left"
+                                                                style="font-size:0; padding:17px 0 0 0">
+                                                                <table role="presentation" border="0" align="left"
+                                                                    cellpadding="0" cellspacing="0" class="fluid">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="background-color:#FF5A5F;border-radius:4px;-webkit-border-radius:4px; -moz-border-radius:4px;">
+                                                                            <table role="presentation" width="100%"
+                                                                                border="0" cellspacing="0"
+                                                                                cellpadding="0">
+                                                                                <tr>
+                                                                                    <td class="pink-btn h2m circular"
+                                                                                        height="45"
+                                                                                        style="padding-left: 25px; padding-right: 25px; text-align: center; color: #FF5A5F; font-size:18px; line-height:24px; text-decoration: none; font-family: Helvetica, Arial, sans-serif;">
+                                                                                        <a href="#"
+                                                                                            style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: #ffffff; text-decoration: none;"
+                                                                                            target="_blank">Update your
+                                                                                            listing</a>
+
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+
+                                                        <!-- * SUBTOPIC MODULE * -->
+
+                                                        <table role="presentation" border="0" cellpadding="0"
+                                                            cellspacing="0" align="center" width="100%"
+                                                            style="max-width:548px;">
+                                                            <tr>
+                                                                <!-- * Subtopic - Body * -->
+                                                                <td valign="top" align="left" class="circular"
+                                                                    style="padding: 40px 0 0 0;">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                                <p style="margin: 0;">Make travel more
+                                                                                    accessible</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="padding:4px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                                <p style="margin: 0;">For travelers with
+                                                                                    disabilities, finding a great place
+                                                                                    to stay can be challenging. Help
+                                                                                    create a community everyone can be a
+                                                                                    part of by adding accessibility
+                                                                                    information to your listing.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="padding:12px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                                <p style="margin: 0;"><a
+                                                                                        style="color:#FF5A5F; text-decoration:none"
+                                                                                        href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd6625d53ba1dfd312b12fa2fde88d14765722a0caa8d952ba1720822effe4afebda2c398b3a2ca5441e33d4020a4b6c58a5d7"
+                                                                                        target="_blank">Add
+                                                                                        accessibility info</a></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Body * -->
+                                                            </tr>
+                                                        </table>
+
+
+                                                        <!-- * DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                                            width="100%" style="max-width:548px;">
+                                                            <!-- * Divider * -->
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <table width="100%" border="0" cellspacing="0"
+                                                                        cellpadding="0">
+                                                                        <tr>
+                                                                            <td height="25"
+                                                                                style="border-bottom: 1px solid #E5E5E5;">
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="25">&nbsp;</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- * End Divider * -->
+                                                        </table>
+                                                        <!-- * END DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+                                                        <!-- * SUBTOPIC CATEGORY MODULE * -->
+
+                                                        <table role="presentation" border="0" cellpadding="0"
+                                                            cellspacing="0" align="center" width="100%"
+                                                            style="max-width:548px;">
+                                                            <tr>
+                                                                <!-- * Subtopic - Headline * -->
+                                                                <td valign="top" align="left" class="circular"
+                                                                    style="padding: 15px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td width="32" valign="middle" align="left">
+                                                                                <img src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/house_2x.png"
+                                                                                    width="32" height="32" border="0"
+                                                                                    style="display:block; margin:0;" />
+                                                                            </td>
+                                                                            <td width="15"></td>
+                                                                            <td valign="top" align="left">
+                                                                                <p
+                                                                                    style="margin: 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                                    Community</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Headline * -->
+                                                            </tr>
+                                                            <tr>
+                                                                <!-- * Subtopic - Image * -->
+                                                                <td valign="top" align="center" class="circular"
+                                                                    style="padding: 18px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="rounded-image" valign="top"
+                                                                                align="center"><a
+                                                                                    href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd6625bb4c9c10fbacb4f3fce98f57177d7f1d99f1c9549d56ea729996fd8b785e343dcbd7af9687cdfc49635e06ba72d5776e"
+                                                                                    target="_blank"><img class="fluid"
+                                                                                        src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/subtopic5.jpg"
+                                                                                        width="548" border="0"
+                                                                                        style="display:block; margin:0; max-width:100%;" /></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Image * -->
+                                                            </tr>
+                                                            <tr>
+                                                                <!-- * Subtopic - Body * -->
+                                                                <td valign="top" align="left" class="circular"
+                                                                    style="padding: 24px 0 0 0;">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                                <p style="margin: 0;">From us, with love
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="padding:4px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:100">
+                                                                                <p style="margin: 0;">For ten years
+                                                                                    you’ve inspired us and pioneered so
+                                                                                    much of what makes this community
+                                                                                    special. To celebrate your
+                                                                                    phenomenal hosting, we put together
+                                                                                    a short video. Here’s to the next
+                                                                                    ten!</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <!-- * Subtopic 1 - Button * -->
+                                                                            <td valign="top" align="left"
+                                                                                style="font-size:0; padding:17px 0 0 0">
+                                                                                <table role="presentation" border="0"
+                                                                                    align="left" cellpadding="0"
+                                                                                    cellspacing="0" class="fluid">
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="background-color:#FF5A5F;border-radius:4px;-webkit-border-radius:4px; -moz-border-radius:4px;">
+                                                                                            <table role="presentation"
+                                                                                                width="100%" border="0"
+                                                                                                cellspacing="0"
+                                                                                                cellpadding="0">
+                                                                                                <tr>
+                                                                                                    <td class="pink-btn h2m circular"
+                                                                                                        height="45"
+                                                                                                        style="padding-left: 25px; padding-right: 25px; text-align: center; color: #FF5A5F; font-size:18px; line-height:24px; text-decoration: none; font-family: Helvetica, Arial, sans-serif;">
+                                                                                                        <a href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd6625e146e137825c905b9af79ed9189388b36f5b7a8a52cc61414f316c810b57ccc19050525423d2d0cdcbf35018dadce300"
+                                                                                                            style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: #ffffff; text-decoration: none;"
+                                                                                                            target="_blank">Watch:
+                                                                                                            A decade of
+                                                                                                            hosting</a>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                            <!-- * End Subtopic 5 - Button * -->
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Body * -->
+                                                            </tr>
+                                                        </table>
+
+
+                                                        <!-- * END SUBTOPIC CATEGORY MODULE * -->
+                                                        <!-- * SUBTOPIC MODULE * -->
+
+
+
+
+
+
+                                                        <!-- * END SUBTOPIC MODULE * -->
+
+
+                                                        <!-- * SUBTOPIC MODULE * -->
+                                                        <!-- * DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                                            width="100%" style="max-width:548px;">
+                                                            <!-- * Divider * -->
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <table width="100%" border="0" cellspacing="0"
+                                                                        cellpadding="0">
+                                                                        <tr>
+                                                                            <td height="25"
+                                                                                style="border-bottom: 1px solid #E5E5E5;">
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="25">&nbsp;</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- * End Divider * -->
+                                                        </table>
+                                                        <!-- * END DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+
+                                                        <!-- * SUBTOPIC CATEGORY MODULE * -->
+                                                        <table role="presentation" border="0" cellpadding="0"
+                                                            cellspacing="0" align="center" width="100%"
+                                                            style="max-width:548px;">
+                                                            <tr>
+                                                                <!-- * Subtopic - Headline * -->
+                                                                <td valign="top" align="left" class="circular"
+                                                                    style="padding: 15px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td width="32" valign="middle" align="left">
+                                                                                <img src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/light_2x.png"
+                                                                                    width="32" height="32" border="0"
+                                                                                    style="display:block; margin:0;" />
+                                                                            </td>
+                                                                            <td width="15"></td>
+                                                                            <td valign="top" align="left">
+                                                                                <p
+                                                                                    style="margin: 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                                    Inspiration</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Headline * -->
+                                                            </tr>
+                                                            <tr>
+                                                                <!-- * Subtopic - Image * -->
+                                                                <td valign="top" align="center" class="circular"
+                                                                    style="padding: 18px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 32px; line-height: 40px; color: #484848; font-weight:700">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td class="rounded-image" valign="top"
+                                                                                align="center"><a
+                                                                                    href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd66251a47eea71bfd7a12f5827bdb91253377f02f38e4739d28fc0ff836172aebdba383f1762e015de3e072e2f39afa4b6caa"
+                                                                                    target="_blank"><img class="fluid"
+                                                                                        src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/April-newsletter-Subtopic5.jpg"
+                                                                                        width="548" border="0"
+                                                                                        style="display:block; margin:0; max-width:100%;" /></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Image * -->
+                                                            </tr>
+                                                            <tr>
+                                                                <!-- * Subtopic - Body * -->
+                                                                <td valign="top" align="left" class="circular"
+                                                                    style="padding: 24px 0 0 0;">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                                <p style="margin: 0;">Airbnbmag Issue 3
+                                                                                    is here</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td valign="top" align="left"
+                                                                                class="circular"
+                                                                                style="padding:4px 0 0 0; font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                                <p style="margin: 0;">From secret
+                                                                                    beaches in Brazil to psychedelic
+                                                                                    sculptures in Barcelona, we’re going
+                                                                                    on another locals-only adventure
+                                                                                    around the world.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <td valign="top" align="left"
+                                                                                style="font-size:0; padding:17px 0 0 0">
+                                                                                <table role="presentation" border="0"
+                                                                                    align="left" cellpadding="0"
+                                                                                    cellspacing="0" class="fluid">
+                                                                                    <tr>
+                                                                                        <td
+                                                                                            style="background-color:#FF5A5F;border-radius:4px;-webkit-border-radius:4px; -moz-border-radius:4px;">
+                                                                                            <table role="presentation"
+                                                                                                width="100%" border="0"
+                                                                                                cellspacing="0"
+                                                                                                cellpadding="0">
+                                                                                                <tr>
+                                                                                                    <td class="pink-btn h2m circular"
+                                                                                                        height="45"
+                                                                                                        style="padding-left: 25px; padding-right: 25px; text-align: center; color: #FF5A5F; font-size:18px; line-height:24px; text-decoration: none; font-family: Helvetica, Arial, sans-serif;">
+                                                                                                        <a href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd662555620fd5e2a44c40894890beae5fddf153d1e870d25209ff660801c2c3305d999c4750839099cfc2dbc94ee169c9da31"
+                                                                                                            style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: #ffffff; text-decoration: none;"
+                                                                                                            target="_blank">Take
+                                                                                                            a peek</a>
+
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                            <!-- * End Subtopic 7 - Button * -->
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <!-- * End Subtopic - Body * -->
+                                                            </tr>
+                                                        </table>
+                                                        <!-- * END SUBTOPIC CATEGORY MODULE * -->
+
+
+                                                        <!-- * END SUBTOPIC MODULE * -->
+
+
+
+
+
+
+
+
+
+                                                        <!-- * DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                                            width="100%" style="max-width:548px;">
+                                                            <!-- * Divider * -->
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <table width="100%" border="0" cellspacing="0"
+                                                                        cellpadding="0">
+                                                                        <tr>
+                                                                            <td height="25"
+                                                                                style="border-bottom: 1px solid #E5E5E5;">
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="45">&nbsp;</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <!-- * End Divider * -->
+                                                        </table>
+                                                        <!-- * END DIVIDER MODULE - 25PX TOP/BOTTOM * -->
+
+
+
+
+
+                                                        <!-- * FOOTER - CALLOUT * -->
+                                                        <table role="presentation" border="0" cellpadding="0"
+                                                            cellspacing="0" align="center" width="100%"
+                                                            style="max-width:548px;">
+                                                            <tr>
+                                                                <td bgcolor="#F6F6F6"
+                                                                    style="padding:54px 25px 44px 25px" valign="top"
+                                                                    align="left">
+                                                                    <table role="presentation" cellpadding="0"
+                                                                        cellspacing="0" border="0" width="100%">
+                                                                        <tr>
+                                                                            <td dir="rtl" bgcolor="#F6F6F6"
+                                                                                align="center" height="100%"
+                                                                                valign="top" width="100%">
+                                                                                <!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="498" style="width: 498px;">
+                        <tr>
+                        <td align="center" valign="top" width="498">
+                        <![endif]-->
+                                                                                <table role="presentation" border="0"
+                                                                                    cellpadding="0" cellspacing="0"
+                                                                                    align="center" width="100%"
+                                                                                    style="max-width:498px;">
+                                                                                    <tr>
+                                                                                        <td align="center" valign="top"
+                                                                                            style="font-size:0;">
+                                                                                            <!--[if mso]>
+                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="498" style="width: 498px;">
+                                    <tr>
+                                    <td align="left" valign="top" width="176" style="width: 176px;">
+                                    <![endif]-->
+                                                                                            <div style="display:inline-block; margin: 0 -2px; max-width: 176px; min-width:160px; vertical-align:top; width:100%;"
+                                                                                                class="stack-column">
+                                                                                                <table
+                                                                                                    role="presentation"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0"
+                                                                                                    border="0"
+                                                                                                    width="100%">
+                                                                                                    <tr>
+                                                                                                        <td dir="ltr"
+                                                                                                            style="padding:0 0 10px 0">
+                                                                                                            <img src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/community_center_image.png"
+                                                                                                                width="176"
+                                                                                                                height=""
+                                                                                                                border="0"
+                                                                                                                alt=""
+                                                                                                                class="center-on-narrow"
+                                                                                                                style="width: 100%; max-width: 176px; height: auto;">
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </div>
+                                                                                            <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="320" style="width: 320px;">
+                                    <![endif]-->
+                                                                                            <div style="display:inline-block; margin: 0 -2px; max-width:55.55%; min-width:320px; vertical-align:top;"
+                                                                                                class="stack-column">
+                                                                                                <table
+                                                                                                    role="presentation"
+                                                                                                    cellspacing="0"
+                                                                                                    cellpadding="0"
+                                                                                                    border="0"
+                                                                                                    width="100%">
+                                                                                                    <tr>
+                                                                                                        <td dir="ltr">
+                                                                                                            <table
+                                                                                                                cellpadding="0"
+                                                                                                                cellspacing="0"
+                                                                                                                width="100%">
+                                                                                                                <tr>
+                                                                                                                    <td valign="top"
+                                                                                                                        align="left"
+                                                                                                                        class="circular"
+                                                                                                                        style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 24px; line-height: 32px; color: #484848; font-weight:700">
+                                                                                                                        <p
+                                                                                                                            style="margin: 0;">
+                                                                                                                            There’s
+                                                                                                                            more
+                                                                                                                            where
+                                                                                                                            that
+                                                                                                                            came
+                                                                                                                            from
+                                                                                                                        </p>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                                <tr>
+                                                                                                                    <td valign="top"
+                                                                                                                        align="left"
+                                                                                                                        class="circular"
+                                                                                                                        style="font-family: 'Circular', Helvetica, Arial, sans-serif; text-align: left; font-size: 18px; line-height: 26px; color: #484848; font-weight:200">
+                                                                                                                        <p
+                                                                                                                            style="margin: 0;">
+                                                                                                                            Chat
+                                                                                                                            with
+                                                                                                                            hosts
+                                                                                                                            about
+                                                                                                                            these
+                                                                                                                            topics
+                                                                                                                            and
+                                                                                                                            more
+                                                                                                                            in
+                                                                                                                            the
+                                                                                                                            Community
+                                                                                                                            Center
+                                                                                                                        </p>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                                <tr>
+                                                                                                                    <!-- * Subtopic 1 - Button * -->
+                                                                                                                    <td valign="top"
+                                                                                                                        align="left"
+                                                                                                                        style="font-size:0; padding:17px 0 10px 0">
+                                                                                                                        <table
+                                                                                                                            role="presentation"
+                                                                                                                            border="0"
+                                                                                                                            align="left"
+                                                                                                                            cellpadding="0"
+                                                                                                                            cellspacing="0"
+                                                                                                                            class="fluid">
+                                                                                                                            <tr>
+                                                                                                                                <td
+                                                                                                                                    style="background-color:#F6F6F6; border:2px solid #9B9B9B; border-radius:4px;-webkit-border-radius:4px; -moz-border-radius:4px;">
+                                                                                                                                    <table
+                                                                                                                                        role="presentation"
+                                                                                                                                        width="100%"
+                                                                                                                                        border="0"
+                                                                                                                                        cellspacing="0"
+                                                                                                                                        cellpadding="0">
+                                                                                                                                        <tr>
+                                                                                                                                            <td class="h2m circular"
+                                                                                                                                                height="45"
+                                                                                                                                                style="padding-left: 25px; padding-right: 25px; text-align: center; color: #F6F6F6; font-size:18px; line-height:24px; text-decoration: none; font-family: Helvetica, Arial, sans-serif;">
+                                                                                                                                                <a href="https://click.airbnbmail.com/u/?qs=2ad9ecf459fd66259253b848a4d7ce9917511c8d123389783d78799f0fa659bdef4b77c35777708d0f1e6a5c3e1dc37fa7b87f7690002709"
+                                                                                                                                                    style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: #4A4A4A; text-decoration: none;"
+                                                                                                                                                    target="_blank">Join
+                                                                                                                                                    the
+                                                                                                                                                    conversation</a>
+
+                                                                                                                                            </td>
+                                                                                                                                        </tr>
+                                                                                                                                    </table>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </table>
+                                                                                                                    </td>
+                                                                                                                    <!-- * End Subtopic 1 - Button * -->
+                                                                                                                </tr>
+                                                                                                            </table>
+
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </div>
+                                                                                            <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+
+                                                        </table>
+                                                        <!-- * END FOOTER - CALLOUT * -->
+
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- End Body -->
+
+                                <!-- Footer -->
+
+
+                                <!-- // STANDARD FOOTER START // -->
+                                <tr>
+                                    <td align="center"
+                                        style="padding-top: 70px; padding-bottom: 10px; background-color:#ffffff;">
+                                        <table class="w100m" width="90%" border="0" align="center" cellpadding="0"
+                                            cellspacing="0">
+                                            <tr>
+                                                <td align="center"
+                                                    style="border-top: 1px solid #DBDBDB; padding-top: 20px;">
+                                                    <table width="100%" border="0" align="center" cellpadding="0"
+                                                        cellspacing="0" class="w90m">
+                                                        <tr>
+                                                            <!-- * COPY START * -->
+                                                            <td
+                                                                style="text-align: left; font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #9ca299; line-height: 18px;">
+                                                                Sent with ♥ from</td>
+                                                            <!-- * COPY END * -->
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- * COPY START * -->
+                                                            <td
+                                                                style="text-align: left; font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #9ca299; line-height: 18px;">
+                                                                <span class="linkfix">Airbnb, Inc.<br>888 Brannan
+                                                                    Street, San Francisco, CA 94103</span></td>
+                                                            <!-- * COPY END * -->
+                                                        </tr>
+                                                        <tr>
+                                                            <!-- * COPY START * -->
+                                                            <td
+                                                                style="text-align: left; font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #9ca299; line-height: 18px;">
+                                                                <a href="#"
+                                                                    style="color: #aaacad; text-decoration: underline;">View
+                                                                    in browser</a>&nbsp;|&nbsp;<a href="#"
+                                                                    style="color: #aaacad; text-decoration: underline;">Unsubscribe</a>
+                                                            </td>
+                                                            <!-- * COPY END * -->
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- // STANDARD FOOTER END // -->
+
+
+
+                                <!-- End Footer -->
+                            </table>
+                            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+        <![endif]-->
+            </div>
+            <!-- END CONTENT -->
+        </center>
+
+
+    </body>
+
+    </html>
+
+
+
+</body>
+
+</html>
