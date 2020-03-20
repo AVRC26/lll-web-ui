@@ -3467,6 +3467,57 @@ footer h4::after {
 }
 
 /* ------------------------------------------------------------------- 
+ * ## go to top
+ * ------------------------------------------------------------------- */
+.dark-mode-toggle {
+   position: fixed;
+   bottom: 30px;
+   left: 30px;
+   z-index: 600;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: all 0.8s ease-in-out;
+   transition: all 0.8s ease-in-out;
+   -webkit-transform: translate3d(0, 200%, 0);
+   -ms-transform: translate3d(0, 200%, 0);
+   transform: translate3d(0, 200%, 0);
+}
+
+.dark-mode-toggle a, .dark-mode-toggle a:visited {
+   text-decoration: none;
+   border: 0 none;
+   display: block;
+   height: 5.4rem;
+   width: 5.4rem;
+   line-height: 5.4rem;
+   text-align: center;
+   background-image: url(../images/icons/icon-video.svg);
+   background-color: #000000;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 10px 16px;
+   color: rgba(255, 255, 255, 0.5);
+   text-align: center;
+   text-transform: uppercase;
+   border-radius: 50%;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.dark-mode-toggle a:hover, .dark-mode-toggle a:focus {
+   color: #FFFFFF;
+   background-color: #0054a5;
+}
+
+.dark-mode-toggle.link-is-visible {
+   opacity: 1;
+   visibility: visible;
+   -webkit-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+
+/* ------------------------------------------------------------------- 
  * responsive:
  * footer components
  * ------------------------------------------------------------------- */
