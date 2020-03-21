@@ -346,6 +346,70 @@
         });
     };
 
+    /* Darkmode Toggle
+    * ------------------------------------------------------ */
+   var clDarkModeToggle = function() {
+        
+    var pxShow      = 500,
+        toggleDarkMode = $(".dark-mode-toggle")
+
+    // Show or hide the button
+    if ($(window).scrollTop() >= pxShow) toggleDarkMode.addClass('show-toggle');
+
+    $(window).on('scroll', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        if ($(window).scrollTop() >= pxShow) {
+            if(!toggleDarkMode.hasClass('show-toggle')) toggleDarkMode.addClass('show-toggle')
+        } else {
+            toggleDarkMode.removeClass('show-toggle')
+        }
+    });
+    
+    // Toggle DarkMode and preserve state, light by default
+    $(".dark-mode-toggle").on('click', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        if(toggleDarkMode.hasClass('mode-light')) {
+            toggleDarkMode.removeClass('mode-light')
+            toggleDarkMode.addClass('mode-dark')
+            DarkReader.setFetchMethod(window.fetch);
+            DarkReader.enable({
+                brightness: 100,
+                contrast: 100,
+                sepia: 0
+            });
+            localStorage.setItem('vMode', 'dark');
+        } else if(toggleDarkMode.hasClass('mode-dark')) {
+            toggleDarkMode.removeClass('mode-dark')
+            toggleDarkMode.addClass('mode-light')
+            DarkReader.disable();
+            localStorage.setItem('vMode', 'light');
+        } else {
+            toggleDarkMode.addClass('mode-light')
+            localStorage.setItem('vMode', 'light');
+        }
+    });
+
+    // Set theme based on previous setting, light by default
+    $("document").ready(function(event){
+        if (localStorage.getItem('vMode') === 'dark') {
+            DarkReader.setFetchMethod(window.fetch);
+            DarkReader.enable({
+                brightness: 100,
+                contrast: 100,
+                sepia: 0
+            });
+        } else {
+            toggleDarkMode.addClass('mode-light')
+            DarkReader.disable();
+        }
+    })
+
+};
+
 
    /* Map
     * ------------------------------------------------------ */
@@ -622,6 +686,7 @@
         clAOS();
         clAjaxChimp();
         clBackToTop();
+        clDarkModeToggle();
         clGoogleMap();
 
     })();

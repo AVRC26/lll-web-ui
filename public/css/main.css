@@ -3467,12 +3467,12 @@ footer h4::after {
 }
 
 /* ------------------------------------------------------------------- 
- * ## go to top
+ * ## dark-mode toggle
  * ------------------------------------------------------------------- */
 .dark-mode-toggle {
    position: fixed;
-   bottom: 30px;
-   left: 30px;
+   bottom: 100px;
+   right: 30px;
    z-index: 600;
    opacity: 0;
    visibility: hidden;
@@ -3491,11 +3491,10 @@ footer h4::after {
    width: 5.4rem;
    line-height: 5.4rem;
    text-align: center;
-   background-image: url(../images/icons/icon-video.svg);
    background-color: #000000;
    background-repeat: no-repeat;
    background-position: center center;
-   background-size: 10px 16px;
+   background-size: 20px 32px;
    color: rgba(255, 255, 255, 0.5);
    text-align: center;
    text-transform: uppercase;
@@ -3504,12 +3503,22 @@ footer h4::after {
    transition: all 0.3s ease-in-out;
 }
 
-.dark-mode-toggle a:hover, .dark-mode-toggle a:focus {
-   color: #FFFFFF;
-   background-color: #0054a5;
+.mode-dark a {
+   background-image: url(../images/icons/icon-sun.svg);
+   /* background-color: #FFFFFF; */
 }
 
-.dark-mode-toggle.link-is-visible {
+.mode-light a {
+   background-image: url(../images/icons/icon-moon.svg);
+}
+
+.dark-mode-toggle a:hover, .dark-mode-toggle a:focus {
+   color: #FFFFFF;
+   /* background-image: url(../images/icons/icon-sun.svg) !important; */
+   /* background-color: #0054a5; */
+}
+
+.dark-mode-toggle.show-toggle {
    opacity: 1;
    visibility: visible;
    -webkit-transform: translate3d(0, 0, 0);
