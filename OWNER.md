@@ -23,7 +23,7 @@ Javascript Files:
  - Modernizr (http://modernizr.com/)
  - jQuery Placeholder (https://github.com/mathiasbynens/jquery-placeholder)
  - pace js (http://github.hubspot.com/pace/)
- - Masonry (http://masonry.desandro.com/)
+ - Masonry (http://masonry.desandro.com/) (js/plugins.js :call cursor(67,1103) removed 't', to supress the error)
  - Imagesloaded (https://imagesloaded.desandro.com/)
  - Slick Slider (http://kenwheeler.github.io/slick/)
  - Animate On Scroll (https://michalsnik.github.io/aos/)
