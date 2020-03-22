@@ -687,7 +687,7 @@
         clAjaxChimp();
         clBackToTop();
         clDarkModeToggle();
-        clGoogleMap();
+        // clGoogleMap();
 
     })();
         

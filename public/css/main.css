@@ -4215,7 +4215,7 @@ footer h4::after {
 }
 
 #map-wrap .gm-style label {
-   width: auto;
+   /* width: auto; */
    display: inline;
 }
 
