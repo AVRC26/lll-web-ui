@@ -1,0 +1,2 @@
+# GIT ignore files for lll-web-ui
+.env.dev
