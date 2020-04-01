@@ -1,0 +1,85 @@
+{% load staticfiles %}
+
+<style>
+    /* ------------------------------------------------------------------- 
+    * ## mediaelement style overrides
+    * ------------------------------------------------------------------- */
+    .mejs__overlay-button {
+        background-image: url("{% static 'home/media/images/mejs/mejs-controls.svg' %}");
+    }
+
+    .mejs__overlay-loading-bg-img {
+        background-image: url("{% static 'home/media/images/mejs/mejs-controls.svg' %}");
+    }
+
+    .mejs__button>button {
+        background-image: url("{% static 'home/media/images/mejs/mejs-controls.svg' %}");
+    }
+
+    /* format quote & format link
+    * --------------------------------------- */
+    .format-quote .entry__thumb::before {
+        background-image: url("{% static 'home/media/images/icons/icon-quote.svg' %}");
+    }
+
+    .format-link .entry__thumb::before {
+        background-image: url("{% static 'home/media/images/icons/icon-link.svg' %}");
+    }
+
+    .format-video .entry__thumb a::before {
+        background-image: url("{% static 'home/media/images/icons/icon-video.svg' %}");
+    }
+
+    .s-pageheader {
+        background-image: url("{% static 'home/media/images/hero-bg.jpg' %}");
+    }
+
+    .header__search-trigger {
+        background-image: url("{% static 'home/media/images/icons/icon-search.svg' %}");
+    }
+
+    .s-footer__subscribe #mc-form input[type="email"] {
+        background: url("{% static 'home/media/images/icons/icon-mail.svg' %}") 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    }
+
+    .go-top a,
+    .go-top a:visited {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-up.svg' %}");
+    }
+
+
+    .mode-dark a {
+        background-image: url("{% static 'home/media/images/icons/icon-sun.svg' %}");
+        /* background-color: #FFFFFF; */
+    }
+
+    .mode-light a {
+        background-image: url("{% static 'home/media/images/icons/icon-moon.svg' %}");
+    }
+
+    .pgn__prev {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-left.svg' %}");
+        left: 0;
+    }
+
+    .pgn__prev:hover {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-left-w.svg' %}");
+    }
+
+    .pgn__next {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-right.svg' %}");
+        right: 0;
+    }
+
+    .pgn__next:hover {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-right-w.svg' %}");
+    }
+
+    .pgn__prev.inactive:hover {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-left.svg' %}");
+    }
+
+    .pgn__next.inactive:hover {
+        background-image: url("{% static 'home/media/images/icons/icon-arrow-right.svg' %}");
+    }
+</style>
