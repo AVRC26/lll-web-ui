@@ -21,5 +21,5 @@ urlpatterns = [
     path('snaps/', snaps, name = "snaps"),
     path('travels/', travels, name = "travels"),
     path('memories/', memories, name = "memories"),
-    path('studio/', studio, name = "studio"),
+    path('', studio, name = "studio"),
 ]

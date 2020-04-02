@@ -1,0 +1,23 @@
+    /* ----------------------------------------------------------
+    :: Template Name: Studio - Creative Photography Template
+    :: Author: Colorlib
+    :: Author URL: https://colorlib.com
+    :: Version: 1.0.0
+    :: Created: 31 January 2018
+    :: Last Updated: 31 January 2018
+    ---------------------------------------------------------- */
+
+    /* ============ PLACE YOUR CUSTOM CSS HERE ============ */
+.row {
+    display: block;
+    flex-wrap: nowrap;
+}
+
+.masonry__brick {
+    float: left;
+    padding: 2px 2px;
+}
+
+.masonry .entry {
+    margin-bottom: unset;
+}

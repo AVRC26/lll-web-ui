@@ -1,0 +1,22 @@
+{% load static %}
+
+<!-- jQuery (Necessary for All JavaScript Plugins) -->
+<script src="{% static 'home/js/jquery-3.2.1.min.js' %}"></script>
+<!-- Bootstrap js -->
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/plugins.js' %}"></script>
+<script src="{% static 'home/js/main.js' %}"></script>
+<script src="{% static 'home/js/darkreader-4.9.2.js' %}"></script>
+<!-- Initialize Masonry -->
+<script>
+    $('.masonry').masonry({
+        // options...
+    });
+</script>
+
+<!-- Show slideshow on Top -->
+<script>
+    $(function () {
+        $('html, body').scrollTop($('.welcome-area-top').offset().top)
+    });
+</script>

@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block html %}
-{% include "common/head.html" %}
+{% include "home/common/head.html" %}
 
 <body id="top" onload="">
     <!-- pageheader -->
     <section class="s-pageheader s-pageheader--home">
-        {% include "common/header.html" %}
+        {% include "home/common/header.html" %}
         
-        {% include "common/trending.html" %}
+        {% include "home/common/trending.html" %}
     </section> <!-- end s-pageheader -->
 
     <!-- s-content -->
@@ -492,11 +492,11 @@
 
     </section> <!-- s-content -->
 
-    {% include "common/popular.html" %}
+    {% include "home/common/popular.html" %}
 
-    {% include "common/footer.html" %}
+    {% include "home/common/footer.html" %}
 
-    {% include "common/scripts.html" %}
+    {% include "home/common/scripts.html" %}
 
 </body>
 {% endblock %}

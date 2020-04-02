@@ -1,0 +1,53 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="The Begining, The Current, The End!" content="">
+    <meta name="Venkata Rakesh Anne" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Studio - AVRC26</title>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="{% static 'home/media/images/lll-logo-inv.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'home/media/images//lll-logo-inv.png' %}" type="image/x-icon">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/core-style.css' %}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/base.cs' %}s">
+    <link rel="stylesheet" href="{% static 'home/css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/main.css' %}">
+
+    <style type="text/css" media="screen">
+        .s-styles {
+            background: #f2f2f2;
+            padding: 0%;
+        }
+
+        .s-styles .section-intro h1 {
+            padding: 0%;
+            margin-top: 0;
+        }
+
+        .carousel-indicators li.active:after {
+            background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");
+        }
+
+        .header__logo a {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    {% include "home/common/style.html" %}
+    <!-- Overwrite Styles -->
+    <link rel="stylesheet" href="{% static 'studio/css/style.css' %}">
+
+    <!-- script -->
+    <script src="{% static 'home/js/modernizr.js' %}"></script>
+    <script src="{% static 'home/js/pace.min.js' %}"></script>
+</head>
