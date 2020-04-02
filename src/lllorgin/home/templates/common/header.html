@@ -1,10 +1,10 @@
-{% load staticfiles %}
+{% load static %}
 
 <header class="header">
     <div class="header__content row">
 
         <div class="header__logo">
-            <a class="logo" href="index.html">
+            <a class="logo" href="{% url 'home' %}">
                 <img src="{% static 'home/media/images/lll-logo.png' %}" alt="Homepage">
             </a>
         </div> <!-- end header__logo -->
@@ -22,7 +22,8 @@
             <li>
                 <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </li>
-        </ul> --> <!-- end header__social -->
+        </ul> -->
+        <!-- end header__social -->
 
         <a class="header__search-trigger" href="#0"></a>
 
@@ -37,46 +38,68 @@
                 <input type="submit" class="search-submit" value="Search">
             </form>
 
-            <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+            <a href="#0" title="Close Search"><img href="#0" class="header__overlay-close"
+                    src="{% static 'home/media/images/icons/icon-close.svg' %}" alt="Close"></a>
 
         </div> <!-- end header__search -->
 
 
-        <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+        <a href="#0" title="Menu">
+            <img class="header__toggle-menu" src="{% static 'home/media/images/icons/icon-menu.svg' %}" alt="Menu">
+        </a>
 
         <nav class="header__nav-wrap">
 
             <h2 class="header__nav-heading h6">Site Navigation</h2>
 
             <ul class="header__nav">
-                <li class="current"><a href="index.html" title="">Home</a></li>
+                <li class="current"><a href="{% url 'home' %}" title="">Home</a></li>
                 <li class="has-children">
-                    <a href="#0" title="">Categories</a>
+                    <a href="{% url 'writings' %}" title="">Writings</a>
                     <ul class="sub-menu">
-                        <li><a href="category.html">Lifestyle</a></li>
-                        <li><a href="category.html">Health</a></li>
-                        <li><a href="category.html">Family</a></li>
-                        <li><a href="category.html">Management</a></li>
-                        <li><a href="category.html">Travel</a></li>
-                        <li><a href="category.html">Work</a></li>
+                        <li><a href="{% url 'life' %}">Life</a></li>
+                        <li><a href="{% url 'travel' %}">Travel</a></li>
+                        <li><a href="{% url 'moments' %}">Moments</a></li>
+                        <li><a href="{% url 'technology' %}">Technology</a></li>
                     </ul>
                 </li>
                 <li class="has-children">
-                    <a href="#0" title="">Blog</a>
+                    <a href="{% url 'studio' %}" title="">Studio</a>
                     <ul class="sub-menu">
-                        <li><a href="single-video.html">Video Post</a></li>
-                        <li><a href="single-audio.html">Audio Post</a></li>
-                        <li><a href="single-gallery.html">Gallery Post</a></li>
-                        <li><a href="single-standard.html">Standard Post</a></li>
+                        <li><a href="{% url 'snaps' %}">Snaps</a></li>
+                        <li><a href="{% url 'travels' %}">Travels</a></li>
+                        <li><a href="{% url 'memories' %}">Memories</a></li>
                     </ul>
                 </li>
-                <li><a href="studio.html" title="">My Studio</a></li>
-                <li><a href="style-guide.html" title="">Styles</a></li>
-                <li><a href="about.html" title="">About</a></li>
-                <li><a href="contact.html" title="">Contact</a></li>
+                <li class="has-children">
+                    <a href="{% url 'feed' %}" title="">Feed</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'theverge' %}">The Verge</a></li>
+                        <li><a href="{% url 'indiatoday' %}">India Today</a></li>
+                        <li><a href="{% url 'lonelyplanet' %}">Lonely Planet</a></li>
+                        <li><a href="{% url 'espncricinfo' %}">ESPN Cricinfo</a></li>
+                        <li><a href="{% url 'yahoofinance' %}">Yahoo! Finance</a></li>
+                        <li><a href="{% url 'popscience' %}">Popular Science</a></li>
+                        <li><a href="{% url 'feed' %}"><b>MORE</b></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="{% url 'social' %}" title="">Social</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'google' %}">Google</a></li>
+                        <li><a href="{% url 'twitter' %}">Twitter</a></li>
+                        <li><a href="{% url 'facebook' %}">Facebook</a></li>
+                        <li><a href="{% url 'instagram' %}">Instagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'about' %}" title="">About</a></li>
+                <li><a href="{% url 'contact' %}" title="">Contact</a></li>
             </ul> <!-- end header__nav -->
 
-            <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+            <a href="#0">
+                <img title="Close Menu" class="header__overlay-close close-mobile-menu"
+                    src="{% static 'home/media/images/icons/icon-close.svg' %}" alt="Close">
+            </a>
 
         </nav> <!-- end header__nav-wrap -->
 

@@ -657,7 +657,6 @@ img {
     top: -26px;
     z-index: 1100;
     position: absolute;
-    background-image: url(../media/studio/core-img/active.png);
 }
 
 .carousel-item:after {
