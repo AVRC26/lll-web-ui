@@ -77,3 +77,16 @@
         - Unsplash
             + https://unsplash.com/developers
     Blog
+
+
+## Features Required:
+
+Home Page "Featured Tab Replicate"
+InfiniteScroll
+    - Studio
+    - Feed
+DarkMode toggle
+    Icon Adapted
+
+Popular Posts:
+    - Studio - Replace with images

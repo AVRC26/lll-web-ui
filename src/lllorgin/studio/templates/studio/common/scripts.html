@@ -19,4 +19,19 @@
     $(function () {
         $('html, body').scrollTop($('.welcome-area-top').offset().top)
     });
+
+    $(document).on('lity:ready', function (event, $lightbox) {
+        var $data = $lightbox.opener().data();
+
+        if ($data['title'] == null) {
+            $data['title'] = 'The Splendid!';
+        }
+
+        if ($data['description'] == null) {
+            $data['description'] = '“Great photography is about depth of feeling, not depth of field.”';
+        }
+
+        
+        $('.lity-content').append('<h2>' + $data['title'] + '</h2><p>' + $data['description'] + '</p>');
+    });
 </script>

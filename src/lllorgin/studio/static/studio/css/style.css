@@ -8,16 +8,63 @@
     ---------------------------------------------------------- */
 
     /* ============ PLACE YOUR CUSTOM CSS HERE ============ */
-.row {
-    display: block;
-    flex-wrap: nowrap;
-}
+    .row {
+        display: block;
+        flex-wrap: nowrap;
+    }
 
-.masonry__brick {
-    float: left;
-    padding: 2px 2px;
-}
+    .masonry__brick {
+        float: left;
+        padding: 2px 2px;
+    }
 
-.masonry .entry {
-    margin-bottom: unset;
-}
+    .masonry .entry {
+        margin-bottom: unset;
+    }
+
+    .entry__thumb a {
+        cursor: zoom-in;
+    }
+
+    @media only screen and (max-width:800px) {
+
+        .masonry .grid-sizer,
+        .masonry .masonry__brick {
+            width: 50%;
+            padding: 2px 2px;
+        }
+    }
+
+    .lity-content img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .lity-content h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: #dedede;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: unset;
+    }
+
+    .lity-content p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        color: #dedede;
+        text-align: center
+    }
+
+    @media only screen and (max-width:800px) {
+        .lity-content h2 {
+            font-size: 25px;
+        }
+
+        .lity-content p {
+            font-size: 15px;
+        }
+    }
