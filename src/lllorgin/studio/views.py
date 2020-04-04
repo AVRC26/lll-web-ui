@@ -12,3 +12,6 @@ def memories(request):
 
 def studio(request):
     return render(request, "studio/index.html")
+
+def unsplash(request):
+    return render(request, "studio/unsplash.html")

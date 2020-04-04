@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import snaps, travels, memories, studio
+from .views import snaps, travels, memories, studio, unsplash
 
 urlpatterns = [
     path('snaps/', snaps, name = "snaps"),
     path('travels/', travels, name = "travels"),
     path('memories/', memories, name = "memories"),
     path('', studio, name = "studio"),
+    path('unsplash/', unsplash, name = "unsplash"),
 ]
