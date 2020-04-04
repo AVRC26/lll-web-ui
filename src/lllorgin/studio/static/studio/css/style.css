@@ -1,125 +1,103 @@
-    /* ----------------------------------------------------------
-    :: Template Name: Studio - Creative Photography Template
-    :: Author: Colorlib
-    :: Author URL: https://colorlib.com
-    :: Version: 1.0.0
-    :: Created: 31 January 2018
-    :: Last Updated: 31 January 2018
-    ---------------------------------------------------------- */
+/* ----------------------------------------------------------
+:: Template Name: Studio - Creative Photography Template
+:: Author: Colorlib
+:: Author URL: https://colorlib.com
+:: Version: 1.0.0
+:: Created: 31 January 2018
+:: Last Updated: 31 January 2018
+---------------------------------------------------------- */
 
-    /* ============ PLACE YOUR CUSTOM CSS HERE ============ */
-    .row {
-        display: block;
-        flex-wrap: nowrap;
-    }
-
-    .masonry__brick {
-        float: left;
-        padding: 2px 2px;
-    }
-
-    .masonry .entry {
-        margin-bottom: unset;
-    }
-
-    .entry__thumb a {
-        cursor: zoom-in;
-    }
-
-    @media only screen and (max-width:800px) {
-
-        .masonry .grid-sizer,
-        .masonry .masonry__brick {
-            width: 50%;
-            padding: 2px 2px;
-        }
-    }
-
-    .lity-content img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 80%;
-        height: auto;
-    }
-
-    .lity-content h2 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 40px;
-        color: #dedede;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: unset;
-    }
-
-    .lity-content p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 25px;
-        color: #dedede;
-        text-align: center
-    }
-
-    @media only screen and (max-width:800px) {
-        .lity-content h2 {
-            font-size: 25px;
-        }
-
-        .lity-content p {
-            font-size: 15px;
-        }
-    }
-
-    
-.grid__col-sizer,
-.photo-item {
-  width: 32%;
+/* ============ PLACE YOUR CUSTOM CSS HERE ============ */
+.row {
+    display: block;
+    flex-wrap: nowrap;
 }
 
-.grid__gutter-sizer {
-  width: 5px;
+.masonry__brick {
+    float: left;
+    padding: 2px 2px;
 }
 
-.photo-item {
-  margin-bottom: 5px;
-  float: left;
+.masonry .entry {
+    margin-bottom: unset;
 }
 
-.photo-item__image {
-  display: block;
-  max-width: 100%;
-}
-
-.photo-item__caption {
-  position: absolute;
-  left: 10px;
-  bottom: 1px;
-  margin: 0;
-}
-
-.photo-item__caption a {
-  color: white;
-  font-size: 0.8em;
-  text-decoration: none;
-}
-
-.page-load-status {
-  display: none; /* hidden by default */
-  padding-top: 20px;
-  border-top: 1px solid #DDD;
-  text-align: center;
-  color: #777;
+.entry__thumb a {
+    cursor: zoom-in;
 }
 
 @media only screen and (max-width:800px) {
-  .photo-item__caption a {
+
+    .masonry .grid-sizer,
+    .masonry .masonry__brick {
+        width: 50%;
+        padding: 2px 2px;
+    }
+}
+
+.grid__col-sizer,
+.photo-item {
+    width: 32%;
+}
+
+.grid__gutter-sizer {
+    width: 5px;
+}
+
+.photo-item {
+    margin-bottom: 5px;
+    float: left;
+}
+
+.photo-item__image {
+    display: block;
+    max-width: 100%;
+}
+
+.photo-item__caption {
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+    margin: 0;
+}
+
+.photo-item__caption a {
     color: white;
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-decoration: none;
-  }
+}
+
+.page-load-status {
+    display: none;
+    /* hidden by default */
+    padding-top: 20px;
+    border-top: 1px solid #DDD;
+    text-align: center;
+    color: #777;
+}
+
+@media only screen and (max-width:800px) {
+    .photo-item__caption a {
+        color: white;
+        font-size: 0.6em;
+        text-decoration: none;
+    }
 }
 
 @media only screen and (max-width:700px) {
-  .masonry-wrap {
-    max-width: 90%;
-  }
+    .masonry-wrap {
+        max-width: 90%;
+    }
+}
+
+.lg-sub-html h4 {
+    color: #EEE;
+}
+
+.lg-sub-html p {
+    color: #EEE;
+}
+
+a img {
+    padding: 2px;
 }

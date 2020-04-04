@@ -19,9 +19,9 @@
     doc.setAttribute('data-useragent', navigator.userAgent);
 
     // svg fallback
-    if (!Modernizr.svg) {
-        $(".header__logo img").attr("src", "media/images/logo.png");
-    }
+    // if (!Modernizr.svg) {
+    //     $(".header__logo img").attr("src", "media/images/logo.png");
+    // }
 
 
     /* Preloader
@@ -288,7 +288,7 @@
             offset: -400,
             duration: 600,
             easing: 'ease-in-sine',
-            delay: 100,
+            delay: 300,
             once: true,
             disable: 'mobile'
         });
@@ -329,6 +329,10 @@
             // event.preventDefault();
             // event.stopPropagation();
             // event.stopImmediatePropagation();
+            if (localStorage.getItem('vMode') === 'dark') {
+                toggleDarkMode.removeClass('mode-light')
+                toggleDarkMode.addClass('mode-dark')
+            }
             if ($(window).scrollTop() >= pxShow) {
                 if (!toggleDarkMode.hasClass('show-toggle')) toggleDarkMode.addClass('show-toggle')
             } else {

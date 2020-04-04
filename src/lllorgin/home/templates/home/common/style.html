@@ -16,6 +16,10 @@
         background-image: url("{% static 'home/media/images/mejs/mejs-controls.svg' %}");
     }
 
+    .mejs__overlay-loading-bg-img {
+        background: transparent url("{% static 'home/media/images/mejs/mejs-controls.svg' %}") -160px -40px no-repeat;
+    }
+
     /* format quote & format link
     * --------------------------------------- */
     .format-quote .entry__thumb::before {
@@ -39,7 +43,8 @@
     }
 
     .s-footer__subscribe #mc-form input[type="email"] {
-        background: url("{% static 'home/media/images/icons/icon-mail.svg' %}") 20px center no-repeat, rgba(0, 0, 0, 0.1);
+        background: url("{% static 'home/media/images/icons/icon-mail.svg' %}") 20px center no-repeat,
+        rgba(0, 0, 0, 0.1);
     }
 
     .go-top a,
@@ -81,5 +86,29 @@
 
     .pgn__next.inactive:hover {
         background-image: url("{% static 'home/media/images/icons/icon-arrow-right.svg' %}");
+    }
+
+    .lg-outer .lg-has-vimeo .lg-video-play {
+        background: url("{% static 'home/media/images/icons/play-l.svg' %}") no-repeat scroll 0 0 transparent;
+    }
+
+    .lg-outer .lg-has-vimeo:hover .lg-video-play {
+        background: url("{% static 'home/media/images/icons/play-l.svg' %}") no-repeat scroll 0 -58px transparent;
+    }
+
+    .lg-outer .lg-has-html5 .lg-video-play {
+        background: transparent url("{% static 'home/media/images/icons/play-l.svg' %}") no-repeat scroll 0 0;
+    }
+
+    .lg-outer .lg-has-youtube .lg-video-play {
+        background: url("{% static 'home/media/images/icons/play-l.svg' %}") no-repeat scroll 0 0 transparent;
+    }
+
+    .lg-outer .lg-has-youtube:hover .lg-video-play {
+        background: url("{% static 'home/media/images/icons/play-l.svg' %}") no-repeat scroll 0 -60px transparent;
+    }
+
+    .lg-outer .lg-item {
+        background: url("{% static 'home/media/images/icons/loading.svg' %}") no-repeat scroll center center transparent;
     }
 </style>
