@@ -1,0 +1,108 @@
+{% load static %}
+
+<header class="header">
+    <div class="header__content row">
+
+        <div class="header__logo">
+            <a class="logo" href="{% url 'home' %}">
+                <img src="{% static 'home/media/images/lll-logo.png' %}" alt="Homepage">
+            </a>
+        </div> <!-- end header__logo -->
+
+        <!-- <ul class="header__social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </li>
+        </ul> -->
+        <!-- end header__social -->
+
+        <a class="header__search-trigger" href="#0"></a>
+
+        <div class="header__search">
+
+            <form role="search" method="get" class="header__search-form" action="#">
+                <label>
+                    <span class="hide-content">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s"
+                        title="Search for:" autocomplete="off">
+                </label>
+                <input type="submit" class="search-submit" value="Search">
+            </form>
+
+            <a href="#0" title="Close Search"><img href="#0" class="header__overlay-close"
+                    src="{% static 'home/media/images/icons/icon-close.svg' %}" alt="Close"></a>
+
+        </div> <!-- end header__search -->
+
+
+        <a href="#0" title="Menu">
+            <img class="header__toggle-menu" src="{% static 'home/media/images/icons/icon-menu.svg' %}" alt="Menu">
+        </a>
+
+        <nav class="header__nav-wrap">
+
+            <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+            <ul class="header__nav">
+                <li class="current"><a href="{% url 'home' %}" title="">Home</a></li>
+                <li class="has-children">
+                    <a href="{% url 'writings' %}" title="">Writings</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'life' %}">Life</a></li>
+                        <li><a href="{% url 'travel' %}">Travel</a></li>
+                        <li><a href="{% url 'moments' %}">Moments</a></li>
+                        <li><a href="{% url 'technology' %}">Technology</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="{% url 'studio' %}" title="">Studio</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'snaps' %}">Snaps</a></li>
+                        <li><a href="{% url 'travels' %}">Travels</a></li>
+                        <li><a href="{% url 'memories' %}">Memories</a></li>
+                        <li><a href="{% url 'unsplash' %}">Unsplash</a></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="{% url 'feed' %}" title="">Feed</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'theverge' %}">The Verge</a></li>
+                        <li><a href="{% url 'indiatoday' %}">India Today</a></li>
+                        <li><a href="{% url 'lonelyplanet' %}">Lonely Planet</a></li>
+                        <li><a href="{% url 'espncricinfo' %}">ESPN Cricinfo</a></li>
+                        <li><a href="{% url 'yahoofinance' %}">Yahoo! Finance</a></li>
+                        <li><a href="{% url 'popscience' %}">Popular Science</a></li>
+                        <li><a href="{% url 'feed' %}"><b>MORE</b></li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="{% url 'social' %}" title="">Social</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'google' %}">Google</a></li>
+                        <li><a href="{% url 'twitter' %}">Twitter</a></li>
+                        <li><a href="{% url 'facebook' %}">Facebook</a></li>
+                        <li><a href="{% url 'instagram' %}">Instagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'about' %}" title="">About</a></li>
+                <li><a href="{% url 'contact' %}" title="">Contact</a></li>
+            </ul> <!-- end header__nav -->
+
+            <a href="#0">
+                <img title="Close Menu" class="header__overlay-close close-mobile-menu"
+                    src="{% static 'home/media/images/icons/icon-close.svg' %}" alt="Close">
+            </a>
+
+        </nav> <!-- end header__nav-wrap -->
+
+    </div> <!-- header-content -->
+</header> <!-- header -->
