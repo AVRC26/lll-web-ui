@@ -1,19 +1,49 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block html %}
-{% include "studio/common/head.html" %}
+{% block title %}
+<title>lll Studio - Snaps</title>
+{% endblock %}
 
-<body id="top">
-    <!-- pageheader
-    ================================================== -->
-    <div class="s-pageheader">
+{% block meta %}
+{% endblock %}
 
-        {% include "home/common/header.html" %}
+{% block studio-style %}
+<!-- Core Style CSS -->
+<link rel="stylesheet" href="{% static 'studio/css/core-style.css' %}">
+{% endblock %}
 
-    </div> <!-- end s-pageheader -->
-    <!-- Preloader -->
-    <!-- <div id="preloader">
+{% block styles %}
+<style type="text/css" media="screen">
+    .s-styles {
+        background: #f2f2f2;
+        padding: 0%;
+    }
+
+    .s-styles .section-intro h1 {
+        padding: 0%;
+        margin-top: 0;
+    }
+
+    .carousel-indicators li.active:after {
+        background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");
+    }
+
+    .header__logo a {
+        margin-bottom: 10px;
+    }
+</style>
+<!-- Overwrite Styles -->
+<link rel="stylesheet" href="{% static 'studio/css/style.css' %}">
+{% endblock %}
+
+{% block header-section %}
+<!-- pageheader -->
+<div class="s-pageheader">
+    {% include "home/common/header.html" %}
+</div> <!-- end s-pageheader -->
+<!-- Preloader -->
+<!-- <div id="preloader">
         <div class="showbox">
             <div class="loader">
                 <svg class="circular" viewBox="25 25 50 50">
@@ -32,179 +62,183 @@
             </ul>
         </div>
     </div> -->
+{% endblock %}
 
-    <!-- Welcome Area Start -->
-    <div class="welcome-area-top" id="welcome-area-top">
-        <section class="welcome-area" id="welcome-area">
-            <div class="carousel h-100 slide" data-ride="carousel" id="welcomeSlider">
-                <!-- Carousel Inner -->
-                <div class="carousel-inner h-100">
+{% block content-section %}
+<!-- Welcome Area Start -->
+<div class="welcome-area-top" id="welcome-area-top">
+    <section class="welcome-area" id="welcome-area">
+        <div class="carousel h-100 slide" data-ride="carousel" id="welcomeSlider">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner h-100">
 
-                    <div class="carousel-item h-100 bg-img active"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/1.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“Photography is the story I fail to put into words.”
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/2.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“You don’t take a photograph. You ask quietly to
-                                    borrow it.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/3.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“In photography there is a reality so subtle that it
-                                    becomes more real than reality.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/4.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“There is one thing the photograph must contain, the
-                                    humanity of the moment.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/5.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“Taking an image, freezing a moment, reveals how
-                                    rich reality truly is.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/6.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“A portrait is not made in the camera but on either
-                                    side of it.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/7.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“Photographs open doors into the past, but they also
-                                    allow a look into the future.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/8.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“Essentially what photography is, is, life lit up.”
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/9.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“Photography is truth.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/10.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“If you see something that moves you, and then snap
-                                    it, you keep a moment.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/11.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“When people ask me what equipment I use – I tell
-                                    them my eyes.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/12.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“All photographs are accurate. None of them is the
-                                    truth.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/13.jpg' %}");'>
-                        <div class="carousel-content h-100">
-                            <div class="slide-text">
-                                <p><span>The Snap&nbsp;&nbsp;</span>“I think good dreaming is what leads to good
-                                    photographs.”</p>
-                            </div>
+                <div class="carousel-item h-100 bg-img active"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/1.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“Photography is the story I fail to put into words.”
+                            </p>
                         </div>
                     </div>
                 </div>
-                <!-- Carousel Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#welcomeSlider" data-slide-to="0" class="active bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/1.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="1" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/2.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="2" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/3.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="3" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/4.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="4" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/5.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="5" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/6.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="6" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/7.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="7" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/8.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="8" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/9.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="9" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/10.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="10" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/11.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="11" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/12.jpg' %}");'></li>
-                    <li data-target="#welcomeSlider" data-slide-to="12" class="bg-img"
-                        style='background-image: url("{% static 'home/media/images/studio/bg-img/13.jpg' %}");'></li>
-                </ol>
+
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/2.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“You don’t take a photograph. You ask quietly to
+                                borrow it.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/3.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“In photography there is a reality so subtle that it
+                                becomes more real than reality.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/4.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“There is one thing the photograph must contain, the
+                                humanity of the moment.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/5.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“Taking an image, freezing a moment, reveals how
+                                rich reality truly is.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/6.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“A portrait is not made in the camera but on either
+                                side of it.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/7.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“Photographs open doors into the past, but they also
+                                allow a look into the future.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/8.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“Essentially what photography is, is, life lit up.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/9.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“Photography is truth.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/10.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“If you see something that moves you, and then snap
+                                it, you keep a moment.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/11.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“When people ask me what equipment I use – I tell
+                                them my eyes.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/12.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“All photographs are accurate. None of them is the
+                                truth.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/13.jpg' %}");'>
+                    <div class="carousel-content h-100">
+                        <div class="slide-text">
+                            <p><span>The Snap&nbsp;&nbsp;</span>“I think good dreaming is what leads to good
+                                photographs.”</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
-    <!-- Welcome Area End -->
-    {% include "studio/common/gallery-grid.html" %}
+            <!-- Carousel Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#welcomeSlider" data-slide-to="0" class="active bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/1.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="1" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/2.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="2" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/3.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="3" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/4.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="4" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/5.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="5" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/6.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="6" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/7.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="7" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/8.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="8" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/9.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="9" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/10.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="10" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/11.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="11" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/12.jpg' %}");'></li>
+                <li data-target="#welcomeSlider" data-slide-to="12" class="bg-img"
+                    style='background-image: url("{% static 'home/media/images/studio/bg-img/13.jpg' %}");'></li>
+            </ol>
+        </div>
+    </section>
+</div>
+<!-- Welcome Area End -->
+{% include "studio/common/gallery-grid.html" %}
+{% endblock %}
 
+{% block extra-section %}
+<!-- s-extra -->
+<section class="s-extra">
+    {% include "home/common/tags.html" %}
     {% include "home/common/popular.html" %}
+</section> <!-- end s-extra -->
+{% endblock %}
 
-    {% include "home/common/footer.html" %}
-
-    {% include "home/common/scripts.html" %}
-
-    <!-- Show slideshow on Top -->
-    <script>
-        $(function () {
-            $('html, body').scrollTop($('.welcome-area-top').offset().top)
-        });
-    </script>
-
-</body>
+{% block scripts-section %}
+<!-- Show slideshow on Top -->
+<script>
+    $(function () {
+        $('html, body').scrollTop($('.welcome-area-top').offset().top)
+    });
+</script>
 {% endblock %}

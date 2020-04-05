@@ -1,57 +1,78 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block html %}
-{% include "home/common/head.html" %}
+{% block title %}
+<title>lll Feed - ESPNCricinfo</title>
+{% endblock %}
 
-<body id="top" onload="">
-    <!-- pageheader -->
-    <section class="s-pageheader">
-        {% include "home/common/header.html" %}
-    </section> <!-- end s-pageheader -->
+{% block meta %}
+{% endblock %}
 
-        <!-- s-content -->
-    <section class="s-content s-content--narrow">
+{% block styles %}
+{% endblock %}
 
-        <div class="row">
+{% block header-section %}
+<!-- pageheader -->
+<section class="s-pageheader">
+    {% include "home/common/header.html" %}
+</section> <!-- end s-pageheader -->
+{% endblock %}
 
-            <div class="s-content__header col-full">
-                <h1 class="s-content__header-title">
-                    ESPN Cricinfo
-                </h1>
-            </div> <!-- end s-content__header -->
+{% block content-section %}
+<!-- s-content -->
+<section class="s-content s-content--narrow">
 
-            <div class="s-content__media col-full">
-                <div class="s-content__post-thumb">
-                    <img src="{% static 'home/media/images/thumbs/about/about-1000.jpg' %}" 
-                         srcset="{% static 'home/media/images/thumbs/about/about-2000.jpg' %} 2000w, 
-                                 {% static 'home/media/images/thumbs/about/about-1000.jpg' %} 1000w, 
-                                 {% static 'home/media/images/thumbs/about/about-500.jpg' %} 500w" 
-                         sizes="(max-width: 2000px) 100vw, 2000px" alt="" >
-                </div>
-            </div> <!-- end s-content__media -->
+    <div class="row">
 
-            <div class="col-full s-content__main">
+        <div class="s-content__header col-full">
+            <h1 class="s-content__header-title">
+                ESPN Cricinfo
+            </h1>
+        </div> <!-- end s-content__header -->
 
-                <p class="lead">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint.</p>
-                
-                <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
-                </p>
+        <div class="s-content__media col-full">
+            <div class="s-content__post-thumb">
+                <img src="{% static 'home/media/images/thumbs/about/about-1000.jpg' %}" srcset="{% static 'home/media/images/thumbs/about/about-2000.jpg' %} 2000w, 
+                             {% static 'home/media/images/thumbs/about/about-1000.jpg' %} 1000w, 
+                             {% static 'home/media/images/thumbs/about/about-500.jpg' %} 500w"
+                    sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+            </div>
+        </div> <!-- end s-content__media -->
 
-                <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco.
-                </p>
+        <div class="col-full s-content__main">
 
-            </div> <!-- end s-content__main -->
+            <p class="lead">Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt
+                sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim
+                veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore
+                cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint.</p>
 
-        </div> <!-- end row -->
+            <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi
+                est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor
+                dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in
+                tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore
+                culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat
+                fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
+            </p>
 
-    </section> <!-- s-content -->
+            <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi
+                est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor
+                dolor irure velit commodo cillum sit nulla ullamco.
+            </p>
 
+        </div> <!-- end s-content__main -->
+
+    </div> <!-- end row -->
+
+</section> <!-- s-content -->
+{% endblock %}
+
+{% block extra-section %}
+<!-- s-extra -->
+<section class="s-extra">
+    {% include "home/common/tags.html" %}
     {% include "home/common/popular.html" %}
+</section> <!-- end s-extra -->
+{% endblock %}
 
-    {% include "home/common/footer.html" %}
-
-    {% include "home/common/scripts.html" %}
-
-</body>
+{% block scripts-section %}
 {% endblock %}

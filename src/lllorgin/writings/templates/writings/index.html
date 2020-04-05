@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>lll Writings - Home</title>
+{% endblock %}
+
+{% block meta %}
+{% endblock %}
+
+{% block studio-style %}
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'writings/css/style.css' %}">
+{% endblock %}
+
+{% block header-section %}
+<!-- pageheader -->
+<section class="s-pageheader s-pageheader--home">
+    {% include "home/common/header.html" %}
+
+    {% include "home/common/trending.html" %}
+</section> <!-- end s-pageheader -->
+{% endblock %}
+
+{% block content-section %}
+<!-- s-content -->
+<section class="s-content">
+
+    <div class="row">
+
+        <div class="s-content__header col-full">
+            <h1 class="s-content__header-title">
+                Writings
+            </h1>
+        </div> <!-- end s-content__header -->
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-timeline">
+                            <div class="timeline">
+                                <span class="timeline-icon"></span>
+                                <div class="timeline-content">
+                                    <h3 class="title">Web Desginer</h3>
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+                                        justo id
+                                        pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer
+                                        quis turpis
+                                        magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu
+                                        dapibus.
+                                        Etiam accumsan ornare posuere.
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="year">2017</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline">
+                                <span class="timeline-icon"></span>
+                                <div class="timeline-content">
+                                    <h3 class="title">Web Developer</h3>
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+                                        justo id
+                                        pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer
+                                        quis turpis
+                                        magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu
+                                        dapibus.
+                                        Etiam accumsan ornare posuere.
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-rocket"></i>
+                                    <span class="year">2016</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline">
+                                <span class="timeline-icon"></span>
+                                <div class="timeline-content">
+                                    <h3 class="title">Web Desginer</h3>
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+                                        justo id
+                                        pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer
+                                        quis turpis
+                                        magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu
+                                        dapibus.
+                                        Etiam accumsan ornare posuere.
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="year">2015</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline">
+                                <span class="timeline-icon"></span>
+                                <div class="timeline-content">
+                                    <h3 class="title">Web Developer</h3>
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+                                        justo id
+                                        pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer
+                                        quis turpis
+                                        magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu
+                                        dapibus.
+                                        Etiam accumsan ornare posuere.
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="year">2014</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline">
+                                <span class="timeline-icon"></span>
+                                <div class="timeline-content">
+                                    <h3 class="title">Web Desginer</h3>
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+                                        justo id
+                                        pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer
+                                        quis turpis
+                                        magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu
+                                        dapibus.
+                                        Etiam accumsan ornare posuere.
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="year">2017</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline">
+                                <span class="timeline-icon"></span>
+                                <div class="timeline-content">
+                                    <h3 class="title">Web Developer</h3>
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis
+                                        justo id
+                                        pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer
+                                        quis turpis
+                                        magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu
+                                        dapibus.
+                                        Etiam accumsan ornare posuere.
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-rocket"></i>
+                                    <span class="year">2016</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra-section %}
+<!-- s-extra -->
+<section class="s-extra">
+    {% include "home/common/tags.html" %}
+    {% include "home/common/popular.html" %}
+</section> <!-- end s-extra -->
+{% endblock %}
+
+{% block scripts-section %}
+{% endblock %}

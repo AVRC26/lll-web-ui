@@ -130,4 +130,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     'lllorgin.studio.static',
+    'lllorgin.writings.static',
+    'lllorgin.feed.static',
+    'lllorgin.social.static',
 ]

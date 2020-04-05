@@ -1,5 +1,87 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-    {% block html %}
+
+<head>
+    <meta charset="utf-8">
+    {% block title %}
     {% endblock %}
+
+    <meta name="The Begining, The Eurrent, The End!" content="">
+    <meta name="Venkata Rakesh Anne" content="">
+    <!-- mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% block meta %}
+    {% endblock %}
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="{% static 'home/media/images/lll-logo-inv.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'home/media/images/lll-logo-inv.png' %}" type="image/x-icon">
+
+    <!-- CSS -->
+    {% block studio-style %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'home/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/main.css' %}">
+    {% include "home/common/style.html" %}
+
+    {% block styles %}
+    {% endblock %}
+</head>
+
+<body id="top" onload="">
+    {% block header-section %}
+    {% endblock %}
+
+    {% block content-section %}
+    {% endblock %}
+
+    {% block extra-section %}
+    {% endblock %}
+
+    {% include "home/common/footer.html" %}
+    {% include "home/common/preloader.html" %}
+
+    <!-- .photo-item template HTML -->
+    <script type="text/html" id="photo-item-template">
+        <div class="photo-item">
+            <a href="[[urls.regular]]">
+                <img class="photo-item__image" src="[[urls.regular]]" alt="Photo by [[user.name]]" />
+            </a>
+            <p class="photo-item__caption">
+                <a
+                    href="[[user.links.html]]?utm_source=infinite-scroll-demos&utm_medium=referral&utm_campaign=api-credit">[[user.name]]</a>
+            </p>
+        </div>
+    </script>
+
+    <!-- Java Script -->
+    <script src="{% static 'home/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'home/js/bootstrap-4.1.3.min.js' %}"></script>
+    <script src="{% static 'home/js/darkreader-4.9.2.js' %}"></script>
+    <script src="{% static 'home/js/plugins.js' %}"></script>
+    <script src="{% static 'home/js/script.js' %}"></script>
+    <script src="{% static 'home/js/main.js' %}"></script>
+
+    <!-- Initialize Masonry -->
+    <script>
+        $('.masonry').masonry({
+            // options...
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#lightgallery').lightGallery({
+                hash: false,
+            });
+        });
+    </script>
+
+    {% block scripts-section %}
+    {% endblock %}
+
+</body>
+
 </html>

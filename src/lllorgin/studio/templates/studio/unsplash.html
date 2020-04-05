@@ -1,55 +1,96 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block html %}
-{% include "studio/common/head.html" %}
 
-<body id="top" onload="">
-    <!-- pageheader -->
-    <section class="s-pageheader">
-        {% include "home/common/header.html" %}
-    </section> <!-- end s-pageheader -->
+{% block title %}
+<title>lll Studio - Unsplash</title>
+{% endblock %}
 
-    <!-- s-content -->
-    <section class="s-content">
+{% block meta %}
+{% endblock %}
 
-        <div class="row">
+{% block studio-style %}
+<!-- Core Style CSS -->
+<link rel="stylesheet" href="{% static 'studio/css/core-style.css' %}">
+{% endblock %}
 
-            <div class="s-content__header col-full">
-                <h1 class="s-content__header-title">
-                    Unsplash
-                </h1>
-            </div> <!-- end s-content__header -->
+{% block styles %}
+<style type="text/css" media="screen">
+    .s-styles {
+        background: #f2f2f2;
+        padding: 0%;
+    }
+
+    .s-styles .section-intro h1 {
+        padding: 0%;
+        margin-top: 0;
+    }
+
+    .carousel-indicators li.active:after {
+        background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");
+    }
+
+    .header__logo a {
+        margin-bottom: 10px;
+    }
+</style>
+<!-- Overwrite Styles -->
+<link rel="stylesheet" href="{% static 'studio/css/style.css' %}">
+{% endblock %}
+
+{% block header-section %}
+<!-- pageheader -->
+<section class="s-pageheader">
+    {% include "home/common/header.html" %}
+</section> <!-- end s-pageheader -->
+{% endblock %}
+
+{% block content-section %}
+<!-- s-content -->
+<section class="s-content">
+
+    <div class="row">
+
+        <div class="s-content__header col-full">
+            <h1 class="s-content__header-title">
+                Unsplash
+            </h1>
+        </div> <!-- end s-content__header -->
+    </div>
+    <div class="row masonry-wrap">
+
+        <div class="grid">
+            <div class="grid__col-sizer"></div>
+            <div class="grid__gutter-sizer"></div>
         </div>
-        <div class="row masonry-wrap">
 
-            <div class="grid">
-                <div class="grid__col-sizer"></div>
-                <div class="grid__gutter-sizer"></div>
+        <div class="page-load-status">
+            <div class="loader-ellips infinite-scroll-request">
+                <span class="loader-ellips__dot"></span>
+                <span class="loader-ellips__dot"></span>
+                <span class="loader-ellips__dot"></span>
+                <span class="loader-ellips__dot"></span>
             </div>
-
-            <div class="page-load-status">
-                <div class="loader-ellips infinite-scroll-request">
-                    <span class="loader-ellips__dot"></span>
-                    <span class="loader-ellips__dot"></span>
-                    <span class="loader-ellips__dot"></span>
-                    <span class="loader-ellips__dot"></span>
-                </div>
-                <p class="infinite-scroll-last">End of content</p>
-                <p class="infinite-scroll-error">No more pages to load</p>
-            </div>
+            <p class="infinite-scroll-last">End of content</p>
+            <p class="infinite-scroll-error">No more pages to load</p>
         </div>
-    </section>
+    </div>
+</section>
 
+{% endblock %}
+
+{% block extra-section %}
+<!-- s-extra -->
+<section class="s-extra">
+    {% include "home/common/tags.html" %}
     {% include "home/common/popular.html" %}
+</section> <!-- end s-extra -->
+{% endblock %}
 
-    {% include "home/common/footer.html" %}
-
-    {% include "home/common/scripts.html" %}
-    <script>
-        $(window).on('beforeunload', function () {
-            $(window).scrollTop(0);
-        });
-    </script>
-</body>
+{% block scripts-section %}
+<script>
+    $(window).on('beforeunload', function () {
+        $(window).scrollTop(0);
+    });
+</script>
 {% endblock %}
