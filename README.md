@@ -85,8 +85,15 @@ Home Page "Featured Tab Replicate"
 InfiniteScroll
     - Studio
     - Feed
-DarkMode toggle
-    Icon Adapted
 
-Popular Posts:
-    - Studio - Replace with images
+STUDIO: 
+Unsplash - migrate lightgallery
+Index - redesign with tulen
+Instagram Slider - Studio's 
+
+HOME:
+Home Template
+Explore - Alime's theme
+Signin/SignUp - Forms
+Compose Post Page
+Home {age Highlighter}

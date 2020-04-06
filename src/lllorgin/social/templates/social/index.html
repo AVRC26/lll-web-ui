@@ -12,100 +12,147 @@
 {% endblock %}
 
 {% block styles %}
-<link rel="stylesheet" href="{% static 'social/css/style.css' %}">
+<!-- Main Stylesheets -->
+<link rel="stylesheet" href="{% static 'home/css/style-slides.css' %}" />
 {% endblock %}
 
 {% block header-section %}
 <!-- pageheader -->
-<section class="s-pageheader s-pageheader--home">
+<section class="s-pageheader">
     {% include "home/common/header.html" %}
-
-    {% include "home/common/trending.html" %}
 </section> <!-- end s-pageheader -->
 {% endblock %}
 
 {% block content-section %}
-<!-- s-content -->
-<section class="s-content">
-
-    <div class="row">
-
-        <div class="s-content__header col-full">
-            <h1 class="s-content__header-title">
-                Writings
-            </h1>
-        </div> <!-- end s-content__header -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="main-timeline">
-                        <div class="timeline">
-                            <a href="" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="inner-content">
-                                    <h3 class="title">Web Designing</h3>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                                        adipisci culpa
-                                        dolore explicabo fuga pariatur gjkfdgj quis reprehenderit tenetur vel!</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <div class="inner-content">
-                                    <h3 class="title">Web Development</h3>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                                        adipisci culpa
-                                        dolore explicabo fuga pariatur gjkfdgj quis reprehenderit tenetur vel!</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <div class="inner-content">
-                                    <h3 class="title">Web Development</h3>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                                        adipisci culpa
-                                        dolore explicabo fuga pariatur gjkfdgj quis reprehenderit tenetur vel!</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="timeline">
-                            <a href="" class="timeline-content">
-                                <div class="timeline-icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <div class="inner-content">
-                                    <h3 class="title">Web Development</h3>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                                        adipisci culpa
-                                        dolore explicabo fuga pariatur gjkfdgj quis reprehenderit tenetur vel!</p>
-                                </div>
-                            </a>
-                        </div>
+<!-- hero Section end -->
+<section class="hero-section" id="hero-section">
+    <div class="pana-accordion" id="accordion">
+        <div class="pana-accordion-wrap">
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/5.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/1.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/2.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/3.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/4.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-slider-warp">
+        <div class="hero-slider owl-carousel">
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/5.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/1.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/2.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/3.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/4.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- hero Section end -->
 {% endblock %}
 
 {% block extra-section %}
 <!-- s-extra -->
 <section class="s-extra">
-    {% include "home/common/tags.html" %}
     {% include "home/common/popular.html" %}
 </section> <!-- end s-extra -->
 {% endblock %}
 
 {% block scripts-section %}
+<script src="{% static 'home/js/pana-accordion.js' %}"></script>
+<script src="{% static 'home/js/main-slides.js' %}"></script>
+<!-- Show slideshow on Top -->
+<script>
+    $(function () {
+        $('html, body').scrollTop($('.hero-section').offset().top)
+    });
+</script>
+
 {% endblock %}
