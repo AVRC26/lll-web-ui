@@ -294,6 +294,34 @@
         });
 
     };
+    
+    // Instagram Feeds Slider
+    if ($.fn.owlCarousel) {
+        $('.instagram-feeds-area').owlCarousel({
+            items: 7,
+            margin: 0,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                768: {
+                    items: 4
+                },
+                992: {
+                    items: 5
+                },
+                1280: {
+                    items: 7
+                }
+            }
+        });
+    }
 
 
     /* Back to Top
