@@ -38,6 +38,7 @@
 - *jquery.nicescroll v3.7.6 [https://nicescroll.areaaperta.com](https://nicescroll.areaaperta.com)*
 
 ### **Other**
+- *Blog Homepage Design* [https://codepen.io/stefan-kyurkchiev/](https://codepen.io/stefan-kyurkchiev/pen/NZGmJB)
 
 
 
