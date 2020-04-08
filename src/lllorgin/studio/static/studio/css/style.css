@@ -8,6 +8,20 @@
 ---------------------------------------------------------- */
 
 /* ============ PLACE YOUR CUSTOM CSS HERE ============ */
+.s-styles {
+    background: #f2f2f2;
+    padding: 0%;
+}
+
+.s-styles .section-intro h1 {
+    padding: 0%;
+    margin-top: 0;
+}
+
+.header__logo a {
+    margin-bottom: 10px;
+}
+
 .row {
     display: block;
     flex-wrap: nowrap;
@@ -107,4 +121,8 @@ a img {
     opacity: 0.8;
     padding: unset;
     cursor: zoom-in;
+}
+
+.follow-me-instagram-area h5 {
+    margin-top: 20px;
 }

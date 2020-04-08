@@ -10,27 +10,14 @@
 
 {% block studio-style %}
 <!-- Core Style CSS -->
+<link rel="stylesheet" href="{% static 'home/css/bootstrap-4.1.3.css' %}">
 <link rel="stylesheet" href="{% static 'studio/css/core-style.css' %}">
 {% endblock %}
 
 {% block styles %}
-<style type="text/css" media="screen">
-    .s-styles {
-        background: #f2f2f2;
-        padding: 0%;
-    }
-
-    .s-styles .section-intro h1 {
-        padding: 0%;
-        margin-top: 0;
-    }
-
+<style>
     .carousel-indicators li.active:after {
         background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");
-    }
-
-    .header__logo a {
-        margin-bottom: 10px;
     }
 </style>
 <!-- Overwrite Styles -->
@@ -230,6 +217,7 @@
 <!-- s-extra -->
 <section class="s-extra">
     {% include "home/common/tags.html" %}
+    {% include "studio/common/insta-feed.html" %}
     {% include "home/common/popular.html" %}
 </section> <!-- end s-extra -->
 {% endblock %}

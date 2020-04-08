@@ -12,7 +12,9 @@
 {% endblock %}
 
 {% block styles %}
-<link rel="stylesheet" href="{% static 'writings/css/style.css' %}">
+<!-- Main Stylesheets -->
+<link rel="stylesheet" href="{% static 'writings/css/style-writings.css' %}" />
+<link rel="stylesheet" href="{% static 'writings/css/pana-accordion.css' %}" />
 {% endblock %}
 
 {% block header-section %}
@@ -23,6 +25,117 @@
 {% endblock %}
 
 {% block content-section %}
+<!-- hero Section end -->
+<section class="hero-section" id="hero-section">
+    <div class="pana-accordion" id="accordion">
+        <div class="pana-accordion-wrap">
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/5.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/1.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/2.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/3.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pana-accordion-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/4.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-slider-warp">
+        <div class="hero-slider owl-carousel">
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/5.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/1.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/2.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/3.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item set-bg" data-setbg="{% static 'home/media/images/slides/hero/4.jpg' %}">
+                <div class="pa-text">
+                    <div class="pa-tag">people</div>
+                    <h2>69 Flavio Burg Suite</h2>
+                    <div class="pa-author">
+                        <img src="{% static 'home/media/images/slides/hero/author.jpg' %}" alt="">
+                        <h4>Arthur Rose</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- s-content -->
 <section class="s-content">
     <div class="writings-timeline" id="writings-timeline">
@@ -126,6 +239,7 @@
         </div>
     </div>
 </section>
+<!-- hero Section end -->
 {% endblock %}
 
 {% block extra-section %}
@@ -137,6 +251,14 @@
 {% endblock %}
 
 {% block scripts-section %}
+<script src="{% static 'writings/js/pana-accordion.js' %}"></script>
+<script src="{% static 'writings/js/main.js' %}"></script>
+<!-- Show slideshow on Top -->
+<script>
+    $(function () {
+        $('html, body').scrollTop($('.hero-section').offset().top)
+    });
+</script>
 <script>
     (function ($) {
         $.fn.timeline = function () {
@@ -195,10 +317,5 @@
 
     $("#timeline-1").timeline();
 </script>
-<!-- Show slideshow on Top -->
-<script>
-    $(function () {
-        $('html, body').scrollTop($('.writings-timeline').offset().top)
-    });
-</script>
+
 {% endblock %}
