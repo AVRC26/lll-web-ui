@@ -2121,6 +2121,10 @@ body.search-is-visible {
    font-size: 15px;
 }
 
+.header__nav .sub-menu-all {
+   display: none;
+}
+
 .header__nav li {
    display: inline-block;
    position: relative;

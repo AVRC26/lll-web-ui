@@ -112,7 +112,13 @@
     color: #EEE;
 }
 
-a img {
+/* For gallery-grid spacing */
+.no-gutters a img {
+    padding: 3px;
+}
+
+/* To reduce burger menu icon size */
+.header__content .header__toggle-menu  {
     padding: 3px;
 }
 

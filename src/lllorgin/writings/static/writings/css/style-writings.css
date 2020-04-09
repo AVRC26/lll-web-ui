@@ -742,7 +742,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .about-img {
 	text-align: center;
-	background-image: url("../img/about-bg.png");
+	/* background-image: url("../img/about-bg.png"); */
 	background-repeat: no-repeat;
 	background-size: inherit;
 	background-position: center center;

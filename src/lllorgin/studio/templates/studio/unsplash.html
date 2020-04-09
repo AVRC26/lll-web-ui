@@ -88,6 +88,7 @@
 {% endblock %}
 
 {% block scripts-section %}
+<script src="{% static 'studio/js/script-unsplash.js' %}"></script>
 <script>
     $(window).on('beforeunload', function () {
         $(window).scrollTop(0);

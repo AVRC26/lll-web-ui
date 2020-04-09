@@ -23,7 +23,7 @@
 {% endblock %}
 
 {% block content-section %}
-<div class="hero-area-feed" id="hero-area-feed">
+<div class="hero-section-feed" id="hero-section-feed">
     <!-- Hero Area Start -->
     <section class="hero-area">
         <div class="hero-slides owl-carousel">
@@ -198,6 +198,7 @@
         </div>
     </section> <!-- Hero Area End -->
 </div>
+{% include "home/common/articles-grid.html" %}
 {% endblock %}
 
 {% block extra-section %}
@@ -213,7 +214,7 @@
 <!-- Show slideshow on Top -->
 <script>
     $(function () {
-        $('html, body').scrollTop($('.hero-area-feed').offset().top)
+        $('html, body').scrollTop($('.hero-section-feed').offset().top)
     });
 </script>
 {% endblock %}

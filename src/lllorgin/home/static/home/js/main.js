@@ -169,7 +169,9 @@
         // open (or close) submenu items in mobile view menu. 
         // close all the other open submenu items.
         $('.header__nav .has-children').children('a').on('click', function (e) {
-            e.preventDefault();
+            if ($(window).width() < 800) { 
+                e.preventDefault();
+            }
 
             if ($(".close-mobile-menu").is(":visible") == true) {
 

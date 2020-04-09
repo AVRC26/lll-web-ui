@@ -9,15 +9,17 @@
     - [ ] Feed
 - [ ] Explore - Alime's theme
 - [ ] Signin/SignUp - Forms
-- [ ] Make Main Menus of Childs href and Make Arrows Clickable
+- [x] Make Main Menus of Childs href and Make Arrows Clickable (found alternative)
+- [ ] Add Categories/Title to Individual Home Pages
 
 #### **Studio**
 - [ ] Unsplash - migrate lightgallery
 - [ ] Index - redesign with tulen
 - [x] Instagram Slider - Studio's 
+- [ ] Logo Shrinks than others.
 
 #### **Writings**
-- [ ] Feed Home Page design updates
+- [x] Feed Home Page design updates
     - [x] Updated with Homepage Timeline
 - [ ] [QuillJS](https://quilljs.com/), WYSIWYG editor
 - [ ] [Uppy](https://uppy.io/), File Uploader (Optional)
@@ -25,9 +27,11 @@
 - [ ] Compose Post Page
 
 #### **Feed**
-- [ ] Feed Home Page design updates
+- [x] Feed Home Page design updates
+- [ ] Slides -> info is showing on zoom out
 
 #### **Social**
+- [ ] Slides Progress fill Improper Filling
 
 ## **BackEnd - TODO**
 - ### **Database**
