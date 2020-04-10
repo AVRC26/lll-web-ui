@@ -63,6 +63,7 @@
     <script src="{% static 'home/js/jquery-3.4.1.min.js' %}"></script>
     <script src="{% static 'home/js/bootstrap-4.1.3.min.js' %}"></script>
     <script src="{% static 'home/js/darkreader-4.9.2.js' %}"></script>
+    <script src="{% static 'home/js/ckeditor5.min.js' %}"></script>
     <script src="{% static 'home/js/plugins.js' %}"></script>
     <script src="{% static 'home/js/main.js' %}"></script>
 
@@ -81,16 +82,101 @@
         });
     </script>
 
-    <!-- Initialize Quill editor -->
     <script>
-        var quill = new Quill('#editor-container', {
-            modules: {
-                syntax: true,
-                toolbar: '#toolbar-container'
-            },
-            placeholder: 'Compose an epic...',
-            theme: 'snow'
-        });
+        if ($(window).width() < 753) {
+            var itemsVar = [
+                'heading',
+                '|',
+                'bold',
+                'italic',
+                'link',
+                'blockQuote',
+                'alignment',
+                'indent',
+                'bulletedList',
+                'insertTable',
+                'imageUpload',
+                'mediaEmbed',
+                'undo',
+                'redo',
+                'codeBlock',
+                'specialCharacters',
+            ];
+        } else {
+            var itemsVar = [
+                'heading',
+                '|',
+                'bold',
+                'italic',
+                'link',
+                'fontFamily',
+                'fontSize',
+                'fontColor',
+                'fontBackgroundColor',
+                'subscript',
+                'superscript',
+                'underline',
+                'strikethrough',
+                'removeFormat',
+                '|',
+                'blockQuote',
+                'alignment',
+                'indent',
+                'outdent',
+                'bulletedList',
+                'numberedList',
+                'todoList',
+                '|',
+                'insertTable',
+                'imageUpload',
+                'mediaEmbed',
+                'undo',
+                'redo',
+                '|',
+                'codeBlock',
+                'highlight',
+                'pageBreak',
+                'restrictedEditingException',
+                'specialCharacters',
+                'horizontalLine'
+            ];
+        }
+        ClassicEditor
+            .create(document.querySelector('.editor'), {
+                toolbar: {
+                    items: itemsVar
+                },
+                language: 'en',
+                image: {
+                    toolbar: [
+                        'imageTextAlternative',
+                        'imageStyle:full',
+                        'imageStyle:side'
+                    ]
+                },
+                table: {
+                    contentToolbar: [
+                        'tableColumn',
+                        'tableRow',
+                        'mergeTableCells',
+                        'tableCellProperties',
+                        'tableProperties'
+                    ]
+                },
+                licenseKey: '',
+
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error('Oops, something gone wrong!');
+                console.error(
+                    'Please, report the following error in the https://github.com/ckeditor/ckeditor5 with the build id and the error stack trace:'
+                );
+                console.warn('Build id: dzk7ajokxb1f-7s0xd6vlt2ip');
+                console.error(error);
+            });
     </script>
 
     {% block scripts-section %}

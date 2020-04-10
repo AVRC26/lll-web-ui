@@ -624,9 +624,12 @@ html {
 }
 
 .compose-popup-content .logmod__wrapper {
-  max-width: 1000px;
+  max-width: 90%;
 }
 
-.standalone-container {
-  height: 500px;
+/* Apply site-default styles for CKE */
+.compose-popup-content .ck {
+  text-transform: unset;
+  font-family: unset !important;
+  letter-spacing: unset;
 }
