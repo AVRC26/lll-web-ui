@@ -1965,6 +1965,30 @@ body.search-is-visible {
    padding-right: 33px;
 }
 
+.signup-trigger {
+   height: 21px;
+   min-width: 21px;
+   position: absolute;
+   right: 20px;
+   top: 110px;
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: contain;
+}
+
+.signup-trigger::before {
+   font-family: "josefin-sans-semi-bold", sans-serif;
+   font-size: 13px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   line-height: 21px;
+   content: "Account";
+   display: block;
+   color: #FFFFFF;
+   float: left;
+   padding-right: 33px;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * header components
@@ -2020,6 +2044,15 @@ body.search-is-visible {
       display: none;
    }
 
+   .signup-trigger {
+      top: 90px;
+      right: 28px;
+   }
+
+   .signup-trigger::before {
+      display: none;
+   }
+
    .header__search-form::after {
       font-size: 1.5rem;
    }
@@ -2052,6 +2085,15 @@ body.search-is-visible {
 
    .header__search-form input[type="search"] {
       font-size: 3.4rem;
+   }
+
+   .signup-trigger {
+      top: 80px;
+      right: 28px;
+   }
+
+   .signup-trigger::before {
+      display: none;
    }
 
 }
@@ -3386,7 +3428,7 @@ footer h4::after {
  * ------------------------------------------------------------------- */
 .go-top {
    position: fixed;
-   bottom: 30px;
+   bottom: 90px;
    right: 30px;
    z-index: 600;
    opacity: 0;
@@ -3436,7 +3478,7 @@ footer h4::after {
  * ------------------------------------------------------------------- */
 .dark-mode-toggle {
    position: fixed;
-   bottom: 100px;
+   bottom: 160px;
    right: 30px;
    z-index: 600;
    opacity: 0;
@@ -3481,6 +3523,54 @@ footer h4::after {
    -webkit-transform: translate3d(0, 0, 0);
    -ms-transform: translate3d(0, 0, 0);
    transform: translate3d(0, 0, 0);
+}
+
+/* ------------------------------------------------------------------- 
+ * ## compose-toggle
+ * ------------------------------------------------------------------- */
+ .compose-post {
+   position: fixed;
+   bottom: 130px;
+   right: 30px;
+   z-index: 600;
+   opacity: 1;
+   visibility: visible;
+   -webkit-transition: all 0.8s ease-in-out;
+   transition: all 0.8s ease-in-out;
+   -webkit-transform: translate3d(0, 200%, 0);
+   -ms-transform: translate3d(0, 200%, 0);
+   transform: translate3d(0, 200%, 0);
+}
+
+.compose-post a, .compose-post a:visited {
+   text-decoration: none;
+   border: 0 none;
+   display: block;
+   height: 5.4rem;
+   width: 5.4rem;
+   line-height: 5.4rem;
+   text-align: center;
+   background-color: #000000;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 20px 32px;
+   color: rgba(255, 255, 255, 0.5);
+   text-align: center;
+   text-transform: uppercase;
+   border-radius: 50%;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+
+.compose-post a:hover,  .compose-post a:focus{
+   color: #FFFFFF;
+   background-color: #0054a5;
+}
+
+.compose-post.show-toggle {
+   visibility: visible;
+
 }
 
 /* ------------------------------------------------------------------- 

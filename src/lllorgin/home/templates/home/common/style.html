@@ -39,7 +39,11 @@
     }
 
     .header__search-trigger {
-        background-image: url("{% static 'home/media/images/icons/icon-search.svg' %}");
+        background-image: url("{% static 'home/media/images/icons/search.svg' %}");
+    }
+
+    .signup-trigger {
+        background-image: url("{% static 'home/media/images/icons/user-complete.svg' %}");
     }
 
     .s-footer__subscribe #mc-form input[type="email"] {
@@ -110,5 +114,10 @@
 
     .lg-outer .lg-item {
         background: url("{% static 'home/media/images/icons/loading.svg' %}") no-repeat scroll center center transparent;
+    }
+
+    .compose-post a,
+    .compose-post a:visited {
+        background-image: url("{% static 'home/media/images/icons/feather.svg' %}") !important;
     }
 </style>

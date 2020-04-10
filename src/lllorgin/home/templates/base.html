@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{% static 'home/css/vendor.css' %}">
     <link rel="stylesheet" href="{% static 'home/css/main.css' %}">
     {% include "home/common/style.html" %}
-    
+
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
     {% block styles %}
     {% endblock %}
@@ -41,6 +41,8 @@
     {% block extra-section %}
     {% endblock %}
 
+    {% include "home/common/compose.html" %}
+    {% include "home/common/account.html" %}
     {% include "home/common/footer.html" %}
     {% include "home/common/preloader.html" %}
 
@@ -76,6 +78,18 @@
             $('#lightgallery').lightGallery({
                 hash: false,
             });
+        });
+    </script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+        var quill = new Quill('#editor-container', {
+            modules: {
+                syntax: true,
+                toolbar: '#toolbar-container'
+            },
+            placeholder: 'Compose an epic...',
+            theme: 'snow'
         });
     </script>
 
