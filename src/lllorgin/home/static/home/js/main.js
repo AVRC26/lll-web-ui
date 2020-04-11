@@ -325,30 +325,61 @@
         });
     }
 
-    /* Compose Popup
+    /* Confirm Popup
      * ------------------------------------------------------ */
-    var clComposePost = function () {
-        var composePost = $(".compose-post")
+    var clConfirmAction = function () {
+        var confirmAction = $(".btn--red")
 
-        composePost.click(function () {
+        confirmAction.click(function () {
             event.preventDefault();
             event.stopPropagation();
-            $('.compose-popup-content').show('slow');
+            $('.confirm-pop').show('');
         });
 
-        $('.compose-popup-content .logmod__close').click(function () {
-            if (confirm('Your content is not saved, Confirm ?')) {
-                $('.compose-popup-content').hide('');
-            }
+        $('.confirm-pop .confirm-action .btn--red').click(function () {
+            $('.confirm-pop').hide('');
         })
+
+        $('.confirm-pop .confirm-action .btn--primary').click(function () {
+            $('.confirm-pop').hide('');
+            $('.compose-article-wrapper').hide('slow');
+            // window.location.href = "/writings/";
+        })
+
+    };
+
+        /* Confirm Popup
+     * ------------------------------------------------------ */
+    var clComposePost = function () {
+        var clComposePost = $(".compose-post")
+
+        clComposePost.click(function () {
+            event.preventDefault();
+            event.stopPropagation();
+            if (window.location.href.indexOf("/writings/#add-article") != -1) {
+                $('.compose-article-wrapper').show('');
+                $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+            } else if (window.location.pathname == '/writings/') {
+                window.location = "/writings/#add-article"
+                $('.compose-article-wrapper').show('');
+                $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+            } else {
+                window.location = "/writings/#add-article"
+            }
+        });
+
+        $('.confirm-pop .confirm-action .btn--red').click(function () {
+            $('.confirm-pop').hide('');
+        })
+
     };
 
     /* Sign In Popup
      * ------------------------------------------------------ */
     var clAccountPop = function () {
-        var composePost = $(".signup-trigger")
+        var accountPop = $(".signup-trigger")
 
-        composePost.click(function () {
+        accountPop.click(function () {
             event.preventDefault();
             event.stopPropagation();
             $('.account-popup-content').show('slow');
@@ -911,9 +942,10 @@
         clBackToTop();
         clDarkModeToggle();
         // clGoogleMap();
-        clComposePost();
+        clConfirmAction();
         loginModalController.initialize();
         clAccountPop();
+        clComposePost();
 
     })();
 

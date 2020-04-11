@@ -879,6 +879,35 @@ input[type="button"].btn--primary:focus {
    border-color: #0054a5;
 }
 
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+   color: white;
+   background: #0054a5;
+   border-color: #0054a5;
+}
+
+.btn.btn--red:hover,
+button.btn--red:hover,
+input[type="submit"].btn--red:hover,
+input[type="reset"].btn--red:hover,
+input[type="button"].btn--red:hover,
+.btn.btn--red:focus,
+button.btn--red:focus,
+input[type="submit"].btn--red:focus,
+input[type="reset"].btn--red:focus,
+input[type="button"].btn--red:focus {
+   background: #a52f00;
+   border-color: #a52f00;
+}
+
 /* button modifiers
  * ------------------------------------------------- */
 .btn.full-width, button.full-width {
@@ -3542,7 +3571,7 @@ footer h4::after {
    transform: translate3d(0, 200%, 0);
 }
 
-.compose-post a, .compose-post a:visited {
+.compose-post a {
    text-decoration: none;
    border: 0 none;
    display: block;
@@ -3562,15 +3591,9 @@ footer h4::after {
    transition: all 0.3s ease-in-out;
 }
 
-
 .compose-post a:hover,  .compose-post a:focus{
    color: #FFFFFF;
    background-color: #0054a5;
-}
-
-.compose-post.show-toggle {
-   visibility: visible;
-
 }
 
 /* ------------------------------------------------------------------- 
@@ -4051,6 +4074,14 @@ footer h4::after {
       text-align: center;
    }
 
+   .s-content__header-title {
+      font-size: 3.4rem;
+   }
+   
+   .dark-mode-toggle {
+      bottom: 157px;
+   }
+
 }
 
 @media only screen and (max-width:500px) {
@@ -4058,6 +4089,9 @@ footer h4::after {
       font-size: 3.4rem;
    }
 
+   .dark-mode-toggle {
+      bottom: 157px;
+   }
 }
 
 @media only screen and (max-width:400px) {
@@ -4072,6 +4106,10 @@ footer h4::after {
 
    .s-content__header-title {
       font-size: 3.3rem;
+   }
+
+   .dark-mode-toggle {
+      bottom: 150px;
    }
 
 }

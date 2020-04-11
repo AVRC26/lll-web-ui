@@ -15,6 +15,37 @@
 <!-- Main Stylesheets -->
 <link rel="stylesheet" href="{% static 'writings/css/style-writings.css' %}" />
 <link rel="stylesheet" href="{% static 'writings/css/pana-accordion.css' %}" />
+<style>
+    .compose-post.active a {
+        background-color: #0054a5 !important;
+    }
+
+    .compose-article p.buttons {
+        margin-top: 2rem;
+        text-align: right;
+    }
+
+    .btn {
+        line-height: 3 !important;
+    }
+
+    .compose-article {
+        max-width: 80%;
+        margin: 0 auto;
+        padding-bottom: 3rem
+    }
+
+    @media only screen and (max-width:850px) {
+        .compose-article {
+            max-width: 90%;
+        }
+    }
+
+    .s-content__header {
+        padding-top: 3rem;
+
+    }
+</style>
 {% endblock %}
 
 {% block header-section %}
@@ -138,6 +169,23 @@
 </section>
 <!-- s-content -->
 <section class="s-content">
+    <div class="compose-article-wrapper">
+        <div class="s-content__header col-full">
+            <h1 class="s-content__header-title">
+                Compose Article
+            </h1>
+        </div>
+
+        <div class="compose-article">
+            <div class="editor">
+                Awesome Title
+            </div>
+            <p class="buttons">
+                <a class="btn btn--red" href="#0">Discard</a>
+                <a class="btn btn--primary" href="#0">Save Article</a>
+            </p>
+        </div>
+    </div>
     <div class="writings-timeline" id="writings-timeline">
         <div class="timeline-container" id="timeline-1">
             <div class="timeline-header">
@@ -149,14 +197,22 @@
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/6.jpg' %}" />
                         <h2 class="timeline__content-title">1919</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque. </p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque. </p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/7.jpg' %}" />
                         <h2 class="timeline__content-title">1893</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.
                         </p>
                     </div>
                 </div>
@@ -164,21 +220,33 @@
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/8.jpg' %}" />
                         <h2 class="timeline__content-title">1905</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/9.jpg' %}" />
                         <h2 class="timeline__content-title">1908</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/10.jpg' %}" />
                         <h2 class="timeline__content-title">1915</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.
                         </p>
                     </div>
                 </div>
@@ -186,21 +254,33 @@
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/11.jpg' %}" />
                         <h2 class="timeline__content-title">1916</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/2.jpg' %}" />
                         <h2 class="timeline__content-title">1919</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/3.jpg' %}" />
                         <h2 class="timeline__content-title">1920</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.
                         </p>
                     </div>
                 </div>
@@ -208,14 +288,22 @@
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/4.jpg' %}" />
                         <h2 class="timeline__content-title">1922</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/5.jpg' %}" />
                         <h2 class="timeline__content-title">1923</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-text="LOREM IPSUM">
@@ -223,7 +311,11 @@
                             src="{% static 'home/media/images/slides/gallery/6.jpg' %}" />
                         <h2 class="timeline__content-title">1934</h2>
                         <p class="timeline__content-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit
+                            amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac.
+                            Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis
+                            suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet
+                            sollicitudin neque.
                             <i><strong>"Lorem Ipsum" (Neque porro quisquam est)</strong></i>
                         </p>
                     </div>
@@ -232,7 +324,11 @@
                     <div class="timeline__content"><img class="timeline__img"
                             src="{% static 'home/media/images/slides/gallery/7.jpg' %}" />
                         <h2 class="timeline__content-title">1938</h2>
-                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi. Integer sit amet sollicitudin neque.</p>
+                        <p class="timeline__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                            faucibus justo nulla, sit amet molestie massa commodo sed. Quisque gravida diam lacus, vitae
+                            posuere sem porttitor ac. Pellentesque ornare justo luctus, suscipit odio sit amet, aliquet
+                            ante. Donec lobortis suscipit massa, in eleifend quam vestibulum id. Duis at molestie mi.
+                            Integer sit amet sollicitudin neque.</p>
                     </div>
                 </div>
             </div>
@@ -257,6 +353,12 @@
 <script>
     $(function () {
         $('html, body').scrollTop($('.hero-section').offset().top)
+    });
+    $(function () {
+        if (window.location.href.indexOf("/writings/#add-article") != -1) {
+            $('.compose-article-wrapper').show('');
+            $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+        }
     });
 </script>
 <script>
@@ -316,6 +418,99 @@
     })(jQuery);
 
     $("#timeline-1").timeline();
+</script>
+<script>
+    if ($(window).width() < 770) {
+
+        var itemsVar = [
+            'heading',
+            '|',
+            'bold',
+            'italic',
+            'link',
+            'blockQuote',
+            'alignment',
+            'indent',
+            'bulletedList',
+            'imageUpload',
+            'insertTable',
+            'undo',
+            'redo',
+            'codeBlock',
+        ];
+    } else {
+        var itemsVar = [
+            'heading',
+            '|',
+            'bold',
+            'italic',
+            'link',
+            'fontFamily',
+            'fontSize',
+            'fontColor',
+            'fontBackgroundColor',
+            'subscript',
+            'superscript',
+            'underline',
+            'strikethrough',
+            'removeFormat',
+            '|',
+            'blockQuote',
+            'alignment',
+            'indent',
+            'outdent',
+            'bulletedList',
+            'numberedList',
+            'todoList',
+            '|',
+            'insertTable',
+            'imageUpload',
+            'mediaEmbed',
+            'undo',
+            'redo',
+            '|',
+            'codeBlock',
+            'highlight',
+            'pageBreak',
+            'restrictedEditingException',
+            'specialCharacters',
+            'horizontalLine'
+        ];
+    }
+    
+    ClassicEditor
+        .create(document.querySelector('.editor'), {
+            toolbar: {
+                items: itemsVar
+            },
+            width: 'auto',
+            language: 'en',
+            image: {
+                toolbar: [
+                    'imageTextAlternative',
+                    'imageStyle:full',
+                    'imageStyle:side'
+                ]
+            },
+            table: {
+                contentToolbar: [
+                    'tableColumn',
+                    'tableRow',
+                    'mergeTableCells',
+                    'tableCellProperties',
+                    'tableProperties'
+                ]
+            },
+            licenseKey: '',
+
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error('Oops, CKEditor5!');
+            console.error(error);
+        });
 </script>
 
 {% endblock %}
