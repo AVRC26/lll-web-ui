@@ -36,7 +36,7 @@
 - *Lightgallery v1.6.12 [http://sachinchoolur.github.io/lightGallery/](http://sachinchoolur.github.io/lightGallery/)*
 - *Owl Carousel v2.3.4 [https://github.com/OwlCarousel2/OwlCarousel2](https://github.com/OwlCarousel2/OwlCarousel2)*
 - *jquery.nicescroll v3.7.6 [https://nicescroll.areaaperta.com](https://nicescroll.areaaperta.com)*
-- *Quill.js v1.3.7 [https://github.com/quilljs/quill](https://quilljs.com/)*
+- *CKEditor 5 [CKEditor 5](https://ckeditor.com/docs/ckeditor5/latest/)*
 
 ### **Other**
 - *Blog Homepage Elements Design* [https://codepen.io/stefan-kyurkchiev/](https://codepen.io/stefan-kyurkchiev/pen/NZGmJB)

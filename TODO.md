@@ -3,28 +3,30 @@
 
 #### **Home**
 - [x] Home Page "Featured Tab Replicate"
-- [ ] Home Page Highlighter
+- [x] Home Page Highlighter
 - [ ] InfiniteScroll or Auto Load Next page on hover with Animation
     - [ ] Studio
     - [ ] Feed
-- [ ] Explore - Alime's theme
-- [ ] Signin/SignUp - Forms
+- [-] Explore - Alime's theme
+- [x] Signin/SignUp - Forms
 - [x] Make Main Menus of Childs href and Make Arrows Clickable (found alternative)
 - [ ] Add Categories/Title to Individual Home Pages
+- [ ] Integrate cool Select Box [HERE](https://codepen.io/maggiben/pen/ubHiy)
 
 #### **Studio**
 - [ ] Unsplash - migrate lightgallery
-- [ ] Index - redesign with tulen
+- [x] Index - redesign with tulen
 - [x] Instagram Slider - Studio's 
-- [ ] Logo Shrinks than others.
+- [x] Logo Shrinks than others.
+- [x] [filepOnd](https://pqina.nl/filepond/), File Uploader (Optional)
+- [ ] filepOnd design tweak for Vertical images
 
 #### **Writings**
 - [x] Feed Home Page design updates
     - [x] Updated with Homepage Timeline
-- [ ] [QuillJS](https://quilljs.com/), WYSIWYG editor
-- [ ] [Uppy](https://uppy.io/), File Uploader (Optional)
-- [ ] [filepOnd](https://pqina.nl/filepond/), File Uploader (Optional)
-- [ ] Compose Post Page
+- [x] [CKEditor 5](https://ckeditor.com/ckeditor-5/demo/), WYSIWYG editor
+- [x] Compose Post Page
+- [ ] Investigate CKEditor 4
 
 #### **Feed**
 - [x] Feed Home Page design updates
@@ -35,8 +37,11 @@
 
 ## **BackEnd - TODO**
 - ### **Database**
+-[ ] Data Base Structure
 - ### **Media Storage**
+- [ ] AWS S3 Configuration
 - ### **API**
+- [ ] Python Flash Framework
 
 ## **Infrastructure - TODO**
 
