@@ -22,6 +22,29 @@
 </style>
 <!-- Overwrite Styles -->
 <link rel="stylesheet" href="{% static 'studio/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'studio/css/filepond.min.css' %}">
+<style>
+    .compose-post.active a {
+        background-color: #0054a5 !important;
+    }
+
+    .compose-post a,
+    .compose-post a:visited {
+        background-image: url("{% static 'home/media/images/icons/add-photo.svg' %}") !important;
+    }
+
+    .filepond-container p.buttons {
+        text-align: center;
+    }
+
+    .btn {
+        line-height: 3 !important;
+    }
+
+    .s-content {
+        padding-top: 2rem !important;
+    }
+</style>
 {% endblock %}
 
 {% block header-section %}
@@ -210,6 +233,23 @@
     </section>
 </div>
 <!-- Welcome Area End -->
+<section class="s-content studio-index">
+    <div class="filepond-container">
+        <div class="row">
+
+            <div class="s-content__header col-full">
+                <h2 class="s-content__header-title">
+                    Upload a Snap
+                </h2>
+            </div>
+
+        </div>
+        <input type="file" class="filepond" name="filepond" multiple data-max-files="3" />
+        <p class="buttons">
+            <a class="btn btn--red" href="#0">Discard</a>
+        </p>
+    </div>
+</section>
 {% include "studio/common/gallery-grid.html" %}
 {% endblock %}
 
@@ -228,5 +268,36 @@
     $(function () {
         $('html, body').scrollTop($('.welcome-area-top').offset().top)
     });
+    $(function () {
+        if (window.location.href.indexOf("/studio/#add-snap") != -1) {
+            $('.filepond-container').show('');
+            $('html, body').scrollTop($('.filepond-container').offset().top)
+        }
+    });
 </script>
+
+<script src="{% static 'studio/js/filepond.min.js' %}"></script>
+
+<script>
+    FilePond.registerPlugin(FilePondPluginFileEncode);
+    FilePond.registerPlugin(FilePondPluginFileMetadata);
+    FilePond.registerPlugin(FilePondPluginFilePoster);
+    FilePond.registerPlugin(FilePondPluginFileRename);
+    FilePond.registerPlugin(FilePondPluginFileValidateSize);
+    FilePond.registerPlugin(FilePondPluginFileValidateType);
+    FilePond.registerPlugin(FilePondPluginImageExifOrientation);
+    FilePond.registerPlugin(FilePondPluginImageCrop);
+
+    FilePond.registerPlugin(FilePondPluginImageFilter);
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+    FilePond.registerPlugin(FilePondPluginImageResize);
+    FilePond.registerPlugin(FilePondPluginImageValidateSize);
+    FilePond.registerPlugin(FilePondPluginImageTransform);
+
+    FilePond.parse(document.body);
+    FilePond.create(
+        document.querySelector('input')
+    );
+</script>
+
 {% endblock %}

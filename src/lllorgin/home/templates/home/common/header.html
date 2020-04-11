@@ -54,8 +54,8 @@
             <h2 class="header__nav-heading h6">Site Navigation</h2>
 
             <ul class="header__nav">
-                <li class="current"><a href="{% url 'home' %}" title="">Home</a></li>
-                <li class="has-children">
+                <li class="home"><a href="{% url 'home' %}" title="">Home</a></li>
+                <li class="writings has-children">
                     <a href="{% url 'writings' %}" title="">Writings</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-all"><a href="{% url 'writings' %}">All</a></li>
@@ -65,7 +65,7 @@
                         <li><a href="{% url 'technology' %}">Technology</a></li>
                     </ul>
                 </li>
-                <li class="has-children">
+                <li class="studio has-children">
                     <a href="{% url 'studio' %}" title="">Studio</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-all"><a href="{% url 'studio' %}">All</a></li>
@@ -75,7 +75,7 @@
                         <li><a href="{% url 'unsplash' %}">Unsplash</a></li>
                     </ul>
                 </li>
-                <li class="has-children">
+                <li class="feed has-children">
                     <a href="{% url 'feed' %}" title="">Feed</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-all"><a href="{% url 'feed' %}">All</a></li>
@@ -88,7 +88,7 @@
                         <li><a href="{% url 'feed' %}"><b>MORE</b></li>
                     </ul>
                 </li>
-                <li class="has-children">
+                <li class="social has-children">
                     <a href="{% url 'social' %}" title="">Social</a>
                     <ul class="sub-menu">
                         <li class="sub-menu-all"><a href="{% url 'social' %}">All</a></li>
@@ -98,8 +98,8 @@
                         <li><a href="{% url 'instagram' %}">Instagram</a></li>
                     </ul>
                 </li>
-                <li><a href="{% url 'about' %}" title="">About</a></li>
-                <li><a href="{% url 'contact' %}" title="">Contact</a></li>
+                <li class="about"><a href="{% url 'about' %}" title="">About</a></li>
+                <li class="contact"><a href="{% url 'contact' %}" title="">Contact</a></li>
             </ul> <!-- end header__nav -->
 
             <a href="#0">

@@ -48,7 +48,7 @@ html {
   left: 0;
   opacity: 1;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  z-index: 100;
 }
 
 .logmod::after {
@@ -264,7 +264,7 @@ html {
   height: 48px;
   float: right;
   color: #FFF;
-  width: 50%;
+  /* width: 50%; */
   font-weight: 700;
   font-size: 16px;
   background: #4CAF50;
@@ -904,7 +904,7 @@ html {
   margin: 25% auto;
 } */
 
-.confirm-pop .modal {
+.confirm-pop .confirm-modal {
   width: 500px;
   padding: 35px 25px;
   background: white;
@@ -916,7 +916,7 @@ html {
   border-radius: 3px;
 }
 
-.confirm-pop .modal .loader-bar {
+.confirm-pop .confirm-modal .loader-bar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -927,7 +927,7 @@ html {
   opacity: 0.99;
 }
 
-.confirm-pop .modal .loader-bar .bar {
+.confirm-pop .confirm-modal .loader-bar .bar {
   position: absolute;
   bottom: 0;
   width: 80px;

@@ -132,3 +132,56 @@
 .follow-me-instagram-area h5 {
     margin-top: 20px;
 }
+
+/* FilePond Custom CSS */
+.s-content.studio-index {
+    padding-top: unset;
+    padding-bottom: 1rem;
+}
+.filepond-container {
+    display: none;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.filepond--root {
+    font-size: unset !important;
+}
+
+.filepond--item {
+    width: calc(50% - .5em);
+}
+
+@media (min-width: 30em) {
+    .filepond--item {
+        width: calc(50% - .5em);
+    }
+}
+
+@media (min-width: 50em) {
+    .filepond--item {
+        width: calc(33.33% - .5em);
+    }
+}
+
+/* .filepond--image-preview-wrapper {
+    width: 100% !important;
+    margin: 0 !important;
+} */
+
+.filepond--file-action-button {
+    cursor: pointer;
+}
+
+.filepond--panel-root {
+    background-color: unset !important;
+}
+
+[data-filepond-item-state*='error'] .filepond--item-panel,
+[data-filepond-item-state*='invalid'] .filepond--item-panel {
+    background-color: #a52f00;
+}
+
+[data-filepond-item-state='processing-complete'] .filepond--item-panel {
+    background-color: #0054a5;
+}

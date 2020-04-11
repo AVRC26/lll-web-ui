@@ -191,6 +191,25 @@
 
     };
 
+    // JS to highlight activeTab
+    var clHighlightActive = function () {
+        
+        if (window.location.pathname == '/') {
+            $('.header__nav .home').addClass('current');
+        } else if (window.location.pathname.indexOf("/about/") != -1) {
+            $('.header__nav .about').addClass('current');
+        } else if (window.location.pathname.indexOf("/contact/") != -1) {
+            $('.header__nav .contact').addClass('current');
+        } else if (window.location.pathname.indexOf("/writings/") != -1) {
+            $('.header__nav .writings').addClass('current');
+        } else if (window.location.pathname.indexOf("/studio/") != -1) {
+            $('.header__nav .studio').addClass('current');
+        } else if (window.location.pathname.indexOf("/feed/") != -1) {
+            $('.header__nav .feed').addClass('current');
+        } else if (window.location.pathname.indexOf("/social/") != -1) {
+            $('.header__nav .social').addClass('current');
+        } 
+    }
 
     /* Masonry
      * ---------------------------------------------------- */
@@ -343,12 +362,13 @@
         $('.confirm-pop .confirm-action .btn--primary').click(function () {
             $('.confirm-pop').hide('');
             $('.compose-article-wrapper').hide('slow');
+            $('.filepond-container').hide('slow');
             // window.location.href = "/writings/";
         })
 
     };
 
-        /* Confirm Popup
+    /* Confirm Popup
      * ------------------------------------------------------ */
     var clComposePost = function () {
         var clComposePost = $(".compose-post")
@@ -356,15 +376,28 @@
         clComposePost.click(function () {
             event.preventDefault();
             event.stopPropagation();
-            if (window.location.href.indexOf("/writings/#add-article") != -1) {
-                $('.compose-article-wrapper').show('');
-                $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
-            } else if (window.location.pathname == '/writings/') {
-                window.location = "/writings/#add-article"
-                $('.compose-article-wrapper').show('');
-                $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
-            } else {
-                window.location = "/writings/#add-article"
+            if (window.location.href.indexOf("/writings/") != -1) {
+                if (window.location.href.indexOf("/writings/#add-article") != -1) {
+                    $('.compose-article-wrapper').show('');
+                    $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+                } else if (window.location.pathname == '/writings/') {
+                    window.location = "/writings/#add-article"
+                    $('.compose-article-wrapper').show('');
+                    $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+                } else {
+                    window.location = "/writings/#add-article"
+                }
+            } else if (window.location.href.indexOf("/studio/") != -1) {
+                if (window.location.href.indexOf("/studio/#add-snap") != -1) {
+                    $('.filepond-container').show('');
+                    $('html, body').scrollTop($('.filepond-container').offset().top)
+                } else if (window.location.pathname == '/studio/') {
+                    window.location = "/studio/#add-snap"
+                    $('.filepond-container').show('');
+                    $('html, body').scrollTop($('.filepond-container').offset().top)
+                } else {
+                    window.location = "/studio/#add-snap"
+                }
             }
         });
 
@@ -382,7 +415,7 @@
         accountPop.click(function () {
             event.preventDefault();
             event.stopPropagation();
-            $('.account-popup-content').show('slow');
+            $('.account-popup-content').show('');
         });
 
         $('.account-popup-content .logmod__close').click(function () {
@@ -946,6 +979,7 @@
         loginModalController.initialize();
         clAccountPop();
         clComposePost();
+        clHighlightActive();
 
     })();
 

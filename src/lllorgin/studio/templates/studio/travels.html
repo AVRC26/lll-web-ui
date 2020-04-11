@@ -19,6 +19,15 @@
     .carousel-indicators li.active:after {
         background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");
     }
+
+    .compose-post a,
+    .compose-post a:visited {
+        background-image: url("{% static 'home/media/images/icons/add-photo.svg' %}") !important;
+    }
+
+    .s-content {
+        padding-top: 2rem !important;
+    }
 </style>
 <!-- Overwrite Styles -->
 <link rel="stylesheet" href="{% static 'studio/css/style.css' %}">
