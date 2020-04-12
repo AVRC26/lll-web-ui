@@ -24,13 +24,8 @@
 <link rel="stylesheet" href="{% static 'studio/css/style.css' %}">
 <link rel="stylesheet" href="{% static 'studio/css/filepond.min.css' %}">
 <style>
-    .compose-post.active a {
+    .add-snap.active a {
         background-color: #0054a5 !important;
-    }
-
-    .compose-post a,
-    .compose-post a:visited {
-        background-image: url("{% static 'home/media/images/icons/add-photo.svg' %}") !important;
     }
 
     .filepond-container p.buttons {
@@ -273,6 +268,9 @@
             $('.filepond-container').show('');
             $('html, body').scrollTop($('.filepond-container').offset().top)
         }
+    });
+    $(document).ready(function(){
+        $(".add-snap").show();
     });
 </script>
 

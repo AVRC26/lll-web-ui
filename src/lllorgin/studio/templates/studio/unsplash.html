@@ -34,11 +34,6 @@
         margin-bottom: 10px;
     }
 
-    .compose-post a,
-    .compose-post a:visited {
-        background-image: url("{% static 'home/media/images/icons/add-photo.svg' %}") !important;
-    }
-
     .s-content {
         padding-top: 2rem !important;
     }
@@ -101,6 +96,9 @@
 <script>
     $(window).on('beforeunload', function () {
         $(window).scrollTop(0);
+    });
+    $(document).ready(function(){
+        $(".add-snap").show();
     });
 </script>
 {% endblock %}

@@ -20,11 +20,6 @@
         background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");
     }
 
-    .compose-post a,
-    .compose-post a:visited {
-        background-image: url("{% static 'home/media/images/icons/add-photo.svg' %}") !important;
-    }
-
     .s-content {
         padding-top: 2rem !important;
     }
@@ -236,6 +231,9 @@
 <script>
     $(function () {
         $('html, body').scrollTop($('.welcome-area-top').offset().top)
+    });
+    $(document).ready(function(){
+        $(".add-snap").show();
     });
 </script>
 {% endblock %}

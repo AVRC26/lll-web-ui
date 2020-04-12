@@ -347,7 +347,7 @@
     /* Confirm Popup
      * ------------------------------------------------------ */
     var clConfirmAction = function () {
-        var confirmAction = $(".btn--red")
+        var confirmAction = $(".buttons .btn--red")
 
         confirmAction.click(function () {
             event.preventDefault();
@@ -368,7 +368,7 @@
 
     };
 
-    /* Confirm Popup
+    /* Compose Post
      * ------------------------------------------------------ */
     var clComposePost = function () {
         var clComposePost = $(".compose-post")
@@ -376,36 +376,65 @@
         clComposePost.click(function () {
             event.preventDefault();
             event.stopPropagation();
-            if (window.location.href.indexOf("/writings/") != -1) {
-                if (window.location.href.indexOf("/writings/#add-article") != -1) {
-                    $('.compose-article-wrapper').show('');
-                    $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
-                } else if (window.location.pathname == '/writings/') {
-                    window.location = "/writings/#add-article"
-                    $('.compose-article-wrapper').show('');
-                    $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
-                } else {
-                    window.location = "/writings/#add-article"
-                }
-            } else if (window.location.href.indexOf("/studio/") != -1) {
-                if (window.location.href.indexOf("/studio/#add-snap") != -1) {
-                    $('.filepond-container').show('');
-                    $('html, body').scrollTop($('.filepond-container').offset().top)
-                } else if (window.location.pathname == '/studio/') {
-                    window.location = "/studio/#add-snap"
-                    $('.filepond-container').show('');
-                    $('html, body').scrollTop($('.filepond-container').offset().top)
-                } else {
-                    window.location = "/studio/#add-snap"
-                }
+            if (window.location.href.indexOf("/writings/#add-article") != -1) {
+                $('.compose-article-wrapper').show('');
+                $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+            } else if (window.location.pathname == '/writings/') {
+                window.location = "/writings/#add-article"
+                $('.compose-article-wrapper').show('');
+                $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+            } else {
+                window.location = "/writings/#add-article"
             }
         });
 
         $('.confirm-pop .confirm-action .btn--red').click(function () {
             $('.confirm-pop').hide('');
         })
+    };
+
+    /* Add Snap
+     * ------------------------------------------------------ */
+    var clAddSnap = function () {
+        var clAddSnap = $(".add-snap")
+
+        clAddSnap.click(function () {
+            event.preventDefault();
+            event.stopPropagation();
+            if (window.location.href.indexOf("/studio/#add-snap") != -1) {
+                $('.filepond-container').show('');
+                $('html, body').scrollTop($('.filepond-container').offset().top)
+            } else if (window.location.pathname == '/studio/') {
+                window.location = "/studio/#add-snap"
+                $('.filepond-container').show('');
+                $('html, body').scrollTop($('.filepond-container').offset().top)
+            } else {
+                window.location = "/studio/#add-snap"
+            }
+        });
+
+        $('.confirm-pop .confirm-action .btn--red').click(function () {
+            $('.confirm-pop').hide('');
+        })
+    };
+
+        /* Add Snap
+     * ------------------------------------------------------ */
+    var clChooseCategory = function () {
+        var chooseCategory = $(".choose-category")
+
+        chooseCategory.click(function () {
+            event.preventDefault();
+            event.stopPropagation();
+            $('.categories-pop').show('');
+        });
+
+        $('.categories-pop .confirm-action .btn--red').click(function () {
+            $('.categories-pop').hide('');
+        })
 
     };
+
 
     /* Sign In Popup
      * ------------------------------------------------------ */
@@ -980,6 +1009,8 @@
         clAccountPop();
         clComposePost();
         clHighlightActive();
+        clAddSnap();
+        clChooseCategory();
 
     })();
 
