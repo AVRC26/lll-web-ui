@@ -217,6 +217,12 @@
 
         var containerBricks = $('.masonry');
 
+        // Initialize Masonary
+        containerBricks.masonry({
+            // options
+            itemSelector: '.masonry__brick',
+        })
+
         containerBricks.imagesLoaded(function () {
             containerBricks.masonry({
                 itemSelector: '.masonry__brick',
@@ -232,7 +238,16 @@
         });
     };
 
-
+    /* initialize LightGallery
+     * ------------------------------------------------------ */
+    var clLightGallery = function () {
+        $(document).ready(function () {
+            $('#lightgallery').lightGallery({
+                hash: false,
+            });
+        });
+    }
+    
     /* slick slider
      * ------------------------------------------------------ */
     var clSlickSlider = function () {
@@ -1011,6 +1026,7 @@
         clHighlightActive();
         clAddSnap();
         clChooseCategory();
+        clLightGallery();
 
     })();
 
