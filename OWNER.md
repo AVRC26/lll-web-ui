@@ -29,13 +29,8 @@
 - *AOS.js [https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)*
 - *Lity - v2.4.0 [http://sorgalla.com/lity/](http://sorgalla.com/lity/)*
 - *MediaElement.js [http://www.mediaelementjs.com/](http://www.mediaelementjs.com/)*
-- *jquery.counterup.js [https://github.com/bfintal/Counter-Up](https://github.com/bfintal/Counter-Up)*
-- *Scrollup v2.4.1 [http://markgoodyear.com/labs/scrollup/](http://markgoodyear.com/labs/scrollup/)*
-- *WOW - v1.1.2 [https://github.com/matthieua/WOW](https://github.com/matthieua/WOW)*
-- *Isotope v3.0.6 [https://isotope.metafizzy.co](https://isotope.metafizzy.co)*
 - *Lightgallery v1.6.12 [http://sachinchoolur.github.io/lightGallery/](http://sachinchoolur.github.io/lightGallery/)*
 - *Owl Carousel v2.3.4 [https://github.com/OwlCarousel2/OwlCarousel2](https://github.com/OwlCarousel2/OwlCarousel2)*
-- *jquery.nicescroll v3.7.6 [https://nicescroll.areaaperta.com](https://nicescroll.areaaperta.com)*
 - *CKEditor 5 [CKEditor 5](https://ckeditor.com/docs/ckeditor5/latest/)*
 
 ### **Other**

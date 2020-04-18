@@ -8,11 +8,11 @@
 {% block meta %}
 {% endblock %}
 
-{% block studio-style %}
+{% block style-top %}
 <link rel="stylesheet" href="{% static 'feed/css/style-feed.css' %}">
 {% endblock %}
 
-{% block styles %}
+{% block style-bottom %}
 <style>
     .choose-category.active a {
         background-color: #0054a5 !important;
@@ -22,223 +22,13 @@
 
 {% block header-section %}
 <!-- pageheader -->
-<div class="s-pageheader">
+<div class="s-pageheader s-pageheader--home">
     {% include "home/common/header.html" %}
+    {% include "home/common/home-feed.html" %}
 </div> <!-- end s-pageheader -->
 {% endblock %}
 
 {% block content-section %}
-<div class="hero-section-feed" id="hero-section-feed">
-    <!-- Hero Area Start -->
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide1.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>Sand Storm</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide2.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>New York View</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide3.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>The Desert</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide4.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>Mountains Hike</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide1.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>Sand Storm</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide2.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>New York View</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide3.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>The Desert</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide4.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>Mountains Hike</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide1.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>Sand Storm</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide2.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>New York View</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide3.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>The Desert</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide bg-img slide-background-overlay"
-                style="background-image: url({% static 'home/media/images/feed/bg-img/slide4.jpg' %});">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-end">
-                        <div class="col-12">
-                            <div class="hero-slides-content">
-                                <div class="line"></div>
-                                <h2>Mountains Hike</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel tortor
-                                    facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Suspendisse
-                                    sit amet laoreet neque. Fusce sagittis suscipit sem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> <!-- Hero Area End -->
-</div>
 {% include "home/common/articles-grid.html" %}
 {% endblock %}
 
@@ -251,13 +41,11 @@
 {% endblock %}
 
 {% block scripts-section %}
-<script src="{% static 'feed/js/active.js' %}"></script>
+<script src="{% static 'feed/js/script-feed.js' %}"></script>
 <!-- Show slideshow on Top -->
 <script>
-    $(function () {
-        $('html, body').scrollTop($('.hero-section-feed').offset().top)
-    });
     $(document).ready(function () {
+        $(".s-feed .s-content__header").hide();
         $(".choose-category").show();
     });
 </script>

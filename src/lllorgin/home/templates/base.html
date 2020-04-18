@@ -19,7 +19,7 @@
     <link rel="icon" href="{% static 'home/media/images/lll-logo-inv.png' %}" type="image/x-icon">
 
     <!-- CSS -->
-    {% block studio-style %}
+    {% block style-top %}
     {% endblock %}
     <link rel="stylesheet" href="{% static 'home/css/base.css' %}">
     <link rel="stylesheet" href="{% static 'home/css/vendor.css' %}">
@@ -27,7 +27,7 @@
     {% include "home/common/style.html" %}
 
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
-    {% block styles %}
+    {% block style-bottom %}
     {% endblock %}
 </head>
 

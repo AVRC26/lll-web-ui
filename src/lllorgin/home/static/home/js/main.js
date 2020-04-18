@@ -193,7 +193,7 @@
 
     // JS to highlight activeTab
     var clHighlightActive = function () {
-        
+
         if (window.location.pathname == '/') {
             $('.header__nav .home').addClass('current');
         } else if (window.location.pathname.indexOf("/about/") != -1) {
@@ -208,7 +208,7 @@
             $('.header__nav .feed').addClass('current');
         } else if (window.location.pathname.indexOf("/social/") != -1) {
             $('.header__nav .social').addClass('current');
-        } 
+        }
     }
 
     /* Masonry
@@ -247,7 +247,7 @@
             });
         });
     }
-    
+
     /* slick slider
      * ------------------------------------------------------ */
     var clSlickSlider = function () {
@@ -359,6 +359,53 @@
         });
     }
 
+    // Home Page Writings Slider
+    if ($.fn.owlCarousel) {
+        $('.s-writings .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 8000,
+            smartSpeed: 1000
+        });
+    }
+
+    // Home Page Studio Slider
+    if ($.fn.owlCarousel) {
+        $('.s-studio .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            smartSpeed: 1000
+        });
+    }
+    // Home Page Feed Slider
+    if ($.fn.owlCarousel) {
+        $('.s-feed .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 12000,
+            smartSpeed: 1000
+        });
+    }
+
+    // Home Page Social Slider
+    if ($.fn.owlCarousel) {
+        $('.s-social .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            smartSpeed: 1000
+        });
+    }
+
     /* Confirm Popup
      * ------------------------------------------------------ */
     var clConfirmAction = function () {
@@ -433,7 +480,7 @@
         })
     };
 
-        /* Add Snap
+    /* Add Snap
      * ------------------------------------------------------ */
     var clChooseCategory = function () {
         var chooseCategory = $(".choose-category")

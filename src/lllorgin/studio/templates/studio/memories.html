@@ -8,13 +8,13 @@
 {% block meta %}
 {% endblock %}
 
-{% block studio-style %}
+{% block style-top %}
 <!-- Core Style CSS -->
 <link rel="stylesheet" href="{% static 'home/css/bootstrap-4.1.3.css' %}">
 <link rel="stylesheet" href="{% static 'studio/css/core-style.css' %}">
 {% endblock %}
 
-{% block styles %}
+{% block style-bottom %}
 <style>
     .carousel-indicators li.active:after {
         background-image: url("{% static 'home/media/images/studio/core-img/active.png' %}");

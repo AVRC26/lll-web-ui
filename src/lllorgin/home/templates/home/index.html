@@ -9,13 +9,16 @@
 <!-- pageheader -->
 <section class="s-pageheader s-pageheader--home">
     {% include "home/common/header.html" %}
-
-    {% include "home/common/trending.html" %}
+    {% include "home/common/home-writings.html" %}
 </section> <!-- end s-pageheader -->
 {% endblock %}
 
 {% block content-section %}
-{% include "home/common/articles-grid.html" %}
+<div class="s-content">
+    {% include "home/common/home-studio.html" %}
+    {% include "home/common/home-feed.html" %}
+    {% include "home/common/home-social.html" %}
+</div>
 {% endblock %}
 
 {% block extra-section %}
@@ -30,6 +33,7 @@
 <script>
     $(document).ready(function(){
         $(".compose-post").show();
+        $(".s-writings .s-content__header").hide();
     });
 </script>
 {% endblock %}
