@@ -7,11 +7,14 @@
 - [ ] InfiniteScroll or Auto Load Next page on hover with Animation
     - [ ] Studio
     - [ ] Feed
-- [-] Explore - Alime's theme
+- [x] Explore - Alime's theme
 - [x] Signin/SignUp - Forms
 - [x] Make Main Menus of Childs href and Make Arrows Clickable (found alternative)
 - [ ] Add Categories/Title to Individual Home Pages
 - [ ] Integrate cool Select Box [HERE](https://codepen.io/maggiben/pen/ubHiy)
+- [ ] Brainstorm Landing Design about indivudal pages for every section (Writings -> Life)
+- [ ] learn Owl Carousel 
+- [ ] add unsplash slider at the bottom of homepage (like studio instagram slider)
 
 #### **Studio**
 - [ ] Unsplash - migrate lightgallery
@@ -20,6 +23,7 @@
 - [x] Logo Shrinks than others.
 - [x] [filepOnd](https://pqina.nl/filepond/), File Uploader (Optional)
 - [ ] filepOnd design tweak for Vertical images
+- [ ] learn filepOnd
 
 #### **Writings**
 - [x] Feed Home Page design updates
@@ -27,10 +31,13 @@
 - [x] [CKEditor 5](https://ckeditor.com/ckeditor-5/demo/), WYSIWYG editor
 - [x] Compose Post Page
 - [ ] Investigate CKEditor 4
+- [ ] Learn CKEditor5
 
 #### **Feed**
 - [x] Feed Home Page design updates
-- [ ] Slides -> info is showing on zoom out
+- [x] Slides -> info is showing on zoom out
+- [ ] Migrate Yahoo! Finance to Business Insider
+- [ ] Categorize to business, entertainment, general, health, science, sports, technology
 
 #### **Social**
 - [ ] Slides Progress fill Improper Filling

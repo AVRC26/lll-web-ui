@@ -3339,7 +3339,7 @@ footer h4::after {
 }
 
 .s-footer__main {
-   margin-bottom: 3.6rem;
+   /* margin-bottom: 3.6rem; */
 }
 
 
@@ -3436,6 +3436,9 @@ footer h4::after {
 /* -------------------------------------------------------------------
  * ## copyright
  * ------------------------------------------------------------------- */
+ .s-footer__copyright {
+    font-size: 1rem;
+ }
 .s-footer__bottom .s-footer__copyright span {
    display: inline-block;
 }
