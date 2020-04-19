@@ -29,6 +29,19 @@
 }
 
 /* Home Page Styles */
+.entry:hover {
+  box-shadow: 0px 0px 20px #4b4b4b;
+  z-index: 2;
+  -webkit-transition: all .3s ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all .3s ease-in;
+  -ms-transform: scale(1.1);   
+  -moz-transition: all .3s ease-in;
+  -moz-transform: scale(1.1);
+  transition: all .3s ease-in;
+  transform: scale(1.1);
+}
+
 /* Home - Writings Style */
 .s-writings .owl-carousel {
   padding: 0 75px;
