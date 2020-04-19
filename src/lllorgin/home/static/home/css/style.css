@@ -45,27 +45,48 @@
 
 @media only screen and (max-width:1000px) {
   .s-writings .featured__column--big {
-    width: 100%;
+    width: 60%;
   }
+
+  .s-writings .featured__column--small .entry h1 {
+    margin-bottom: 0.7rem;
+  }
+
 }
 
 @media only screen and (max-width:900px) {
+  .s-writings .featured__column--big {
+    width: 100%;
+  }
+
   .s-writings .owl-carousel {
     max-width: 780px;
+  }
+
+  .s-writings .featured__column--small .entry h1 {
+    font-size: 2.8rem;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .s-writings .featured__column--small {
+    width: 100%;
+  }
+
   .s-writings .owl-carousel {
     width: 90%;
   }
+
+  .s-writings .featured__column--small .entry h1 {
+    margin-bottom: 3rem;
+  }
+
 }
 
 @media only screen and (max-width:700px) {
   .s-writings .owl-carousel {
     max-width: 540px;
   }
-
 }
 
 @media only screen and (max-width:600px) {
@@ -75,7 +96,21 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  .s-writings .featured__column--small .entry h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+  }
 }
+
+@media only screen and (max-width:400px) {
+
+  .s-writings .featured__column--small .entry h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 
 /* Home - Studio Style */
 .s-studio .featured__column--big {
@@ -155,19 +190,69 @@
 
 @media only screen and (max-width:1000px) {
   .s-feed .featured__column--big {
-    width: 100%;
+    width: 40%;
+  }
+
+  .s-feed .featured__column--small {
+    width: 30%;
+  }
+
+  .s-feed .featured__column--small .entry h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .s-feed .featured__column--small .entry__meta {
+    font-size: 1rem;
+  }
+
+  .s-feed .featured__column--small .entry__category {
+    margin-bottom: 0;
+    letter-spacing: unset;
+    line-height: 1.7rem;
   }
 }
 
 @media only screen and (max-width:900px) {
+  .s-feed .featured__column--small {
+    width: 100%;
+  }
+
+  .s-feed .featured__column--big {
+    width: 100%;
+  }
+
   .s-feed .owl-carousel {
     max-width: 780px;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .s-feed .featured__column--big {
+    width: 100%;
+  }
+
+  .s-feed .featured__column--small {
+    width: 100%;
+  }
+
   .s-feed .owl-carousel {
     width: 90%;
+  }
+
+  .s-feed .featured__column--small .entry h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .s-feed .featured__column--small .entry__meta {
+    font-size: 1.4rem;
+  }
+
+  .s-feed .featured__column--small .entry__category {
+    letter-spacing: .2rem;
+    margin-bottom: 2.4rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -184,6 +269,17 @@
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .s-feed .featured__column--small .entry h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .s-feed .featured__column--small .entry__category {
+    font-size: 1rem;
+    line-height: 2.1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -211,13 +307,30 @@
 
 @media only screen and (max-width:1000px) {
   .s-social .featured__column--big {
-    width: 100%;
+    width: 33.33333%;
   }
 }
 
 @media only screen and (max-width:900px) {
   .s-social .owl-carousel {
     max-width: 780px;
+  }
+
+  .featured__column {
+    float: left;
+  }
+
+  .s-social .featured__column--big .entry h1 {
+    font-size: 1.5rem;
+  }
+
+  .s-social .featured__column--big .entry__meta {
+    font-size: 1rem;
+  }
+
+  .s-social .featured__column--big .entry__category {
+    letter-spacing: unset;
+    line-height: 1.7rem;
   }
 }
 
@@ -232,6 +345,29 @@
     max-width: 540px;
   }
 
+  .featured__column {
+    float: none;
+  }
+
+  .s-social .featured__column--big {
+    width: 100%;
+  }
+
+  .s-social .featured__column--big .entry h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .s-social .featured__column--big .entry__meta {
+    font-size: 1.4rem;
+  }
+
+  .s-social .featured__column--big .entry__category {
+    letter-spacing: .2rem;
+    margin-bottom: 2.4rem;
+    line-height: 2.4rem;
+  }
+
 }
 
 @media only screen and (max-width:600px) {
@@ -240,6 +376,24 @@
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .s-social .featured__column--big .entry h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .s-social .featured__column--big .entry__category {
+    font-size: 1rem;
+    line-height: 2.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:400px) {
+
+  .s-social .featured__column--small .entry__meta {
+    font-size: 1.4rem;
   }
 }
 
