@@ -13,8 +13,10 @@
 - [ ] Add Categories/Title to Individual Home Pages
 - [ ] Integrate cool Select Box [HERE](https://codepen.io/maggiben/pen/ubHiy)
 - [ ] Brainstorm Landing Design about indivudal pages for every section (Writings -> Life)
-- [ ] learn Owl Carousel 
+- [ ] learn Owl Carousel
+    - [ ] Investigate tiny-slider [HERE](https://github.com/ganlanyuan/tiny-slider)
 - [ ] add unsplash slider at the bottom of homepage (like studio instagram slider)
+- [ ] Popular Posts as Carousel for Writings/Studio/Feed/Social
 
 #### **Studio**
 - [ ] Unsplash - migrate lightgallery
@@ -22,8 +24,8 @@
 - [x] Instagram Slider - Studio's 
 - [x] Logo Shrinks than others.
 - [x] [filepOnd](https://pqina.nl/filepond/), File Uploader (Optional)
-- [ ] filepOnd design tweak for Vertical images
-- [ ] learn filepOnd
+  - [ ] filepOnd design tweak for Vertical images
+  - [ ] learn filepOnd
 
 #### **Writings**
 - [x] Feed Home Page design updates
@@ -31,7 +33,9 @@
 - [x] [CKEditor 5](https://ckeditor.com/ckeditor-5/demo/), WYSIWYG editor
 - [x] Compose Post Page
 - [ ] Investigate CKEditor 4
-- [ ] Learn CKEditor5
+- [ ] BUG: Compose Article is moving to top more 
+- [ ] Learn CKEditor5 
+    - [ ] Integrate ADD/RETRIVE Data [HERE](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/saving-data.html)
 
 #### **Feed**
 - [x] Feed Home Page design updates

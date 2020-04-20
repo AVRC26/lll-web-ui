@@ -29,7 +29,18 @@
 }
 
 /* Home Page Styles */
-.entry:hover {
+.s-writings .entry, .s-studio .entry, .s-feed .entry, .s-social .entry  {
+  -webkit-transition: all .3s ease-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all .3s ease-out;
+  -ms-transform: scale(1);   
+  -moz-transition: all .3s ease-out;
+  -moz-transform: scale(1);
+  transition: all .3s ease-out;
+  transform: scale(1);
+}
+
+.s-writings .entry:hover, .s-studio .entry:hover, .s-feed .entry:hover, .s-social .entry:hover {
   box-shadow: 0px 0px 20px #4b4b4b;
   z-index: 2;
   -webkit-transition: all .3s ease-in;
