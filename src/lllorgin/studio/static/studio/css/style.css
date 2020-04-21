@@ -185,3 +185,22 @@
 [data-filepond-item-state='processing-complete'] .filepond--item-panel {
     background-color: #0054a5;
 }
+
+
+/* Instagram Slides Stye Updates */
+.follow-me-instagram-area h3 {
+    margin-top: unset;
+}
+
+/* Supress Underline */
+a {
+    text-decoration: none !important;
+}
+
+/* Unset <p> styles */
+p {
+    color: unset;
+    font-size: unset;
+    line-height: unset;
+    font-weight: unset;
+}

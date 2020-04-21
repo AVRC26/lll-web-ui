@@ -243,10 +243,12 @@
     $(function () {
         if (window.location.href.indexOf("/writings/#add-article") != -1) {
             $('.compose-article-wrapper').show('');
-            $('html, body').scrollTop($('.compose-article-wrapper').offset().top)
+            // $("html, body").animate({
+            //     scrollTop: $('.compose-article-wrapper').offset().top
+            // }, 2000);
         }
     });
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".s-writings .s-content__header").hide();
         $(".compose-post").show();
     });
@@ -318,12 +320,18 @@
             'bold',
             'italic',
             'link',
+            'fontFamily',
+            'fontSize',
+            'fontColor',
+            'fontBackgroundColor',
+            'underline',
             'blockQuote',
             'alignment',
             'indent',
+            'outdent',
             'bulletedList',
             'imageUpload',
-            'insertTable',
+            'mediaEmbed',
             'undo',
             'redo',
             'codeBlock',
@@ -367,7 +375,7 @@
             'horizontalLine'
         ];
     }
-    
+
     ClassicEditor
         .create(document.querySelector('.editor'), {
             toolbar: {

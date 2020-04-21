@@ -359,6 +359,35 @@
         });
     }
 
+    // Home - Unsplash Feeds Slider
+    if ($.fn.owlCarousel) {
+        $('.image-feeds-area').owlCarousel({
+            items: 7,
+            margin: 0,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                768: {
+                    items: 4
+                },
+                992: {
+                    items: 5
+                },
+                1280: {
+                    items: 7
+                }
+            }
+        });
+    }
+
+
     // Home Page Writings Slider
     if ($.fn.owlCarousel) {
         $('.s-writings .owl-carousel').owlCarousel({

@@ -25,13 +25,49 @@
 <!-- s-extra -->
 <section class="s-extra">
     {% include "home/common/tags.html" %}
+    <!--Home - Unsplash Feed Start -->
+    <section class="image-feed">
+        <div class="container">
+            <h3 style="text-align: center;">Top Snaps - Unsplash</h3>
+        </div>
+        <div class="image-feeds-area owl-carousel">
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i1.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i2.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i3.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i4.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i5.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i6.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+            <div class="single-image-feeds">
+                <img src="{% static 'home/media/images/studio/bg-img/i7.jpg' %}" alt="">
+                <a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>  <!--Home - Unsplash Feed End -->
     {% include "home/common/popular.html" %}
 </section> <!-- end s-extra -->
 {% endblock %}
 
 {% block scripts-section %}
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".compose-post").show();
         $(".s-writings .s-content__header").hide();
     });
