@@ -3095,8 +3095,8 @@ html.no-csstransitions .featured {
  * ------------------------------------------------------------------- */
 .s-extra {
    background-color: #FFFFFF;
-   padding-top: 7.8rem;
-   padding-bottom: 9rem;
+   padding-top: 4rem;
+   padding-bottom: 1rem;
    font-family: "josefin-sans-regular", sans-serif;
    font-size: 1.5rem;
    line-height: 1.8;
@@ -3304,8 +3304,8 @@ html.no-csstransitions .featured {
  *
  * ------------------------------------------------------------------- */
 footer {
-   padding-top: 10.2rem;
-   padding-bottom: 6rem;
+   padding-top: 4rem;
+   padding-bottom: 1rem;
    font-size: 1.5rem;
    line-height: 2;
    color: rgba(255, 255, 255, 0.4);
