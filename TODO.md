@@ -17,6 +17,7 @@
     - [ ] Investigate tiny-slider [HERE](https://github.com/ganlanyuan/tiny-slider)
 - [ ] add unsplash slider at the bottom of homepage (like studio instagram slider)
 - [ ] Popular Posts as Carousel for Writings/Studio/Feed/Social
+- [ ] Integrate Cool Srollbar
 
 #### **Studio**
 - [ ] Unsplash - migrate lightgallery
@@ -33,9 +34,14 @@
 - [x] [CKEditor 5](https://ckeditor.com/ckeditor-5/demo/), WYSIWYG editor
 - [x] Compose Post Page
 - [ ] Investigate CKEditor 4
-- [ ] BUG: Compose Article is moving to top more 
+- [x] BUG: Compose Article is moving to top more 
 - [ ] Learn CKEditor5 
     - [ ] Integrate ADD/RETRIVE Data [HERE](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/saving-data.html)
+    - [ ] Integrate Original Template for Post View [HERE](http://localhost:9001/writings/life/)
+    - [ ] Add Share icons on Top of post
+- [ ] Design and Integrade Unsplash Image Selector
+- [ ] Push images to AWS from CKE5 (skip DB)
+- [ ] Swap colors for CANCEL/PROCEED for DISCARD pop
 
 #### **Feed**
 - [x] Feed Home Page design updates
@@ -44,11 +50,11 @@
 - [ ] Categorize to business, entertainment, general, health, science, sports, technology
 
 #### **Social**
-- [ ] Slides Progress fill Improper Filling
+- [x] Slides Progress fill Improper Filling
 
 ## **BackEnd - TODO**
 - ### **Database**
--[ ] Data Base Structure
+- [ ] Data Base Structure
 - ### **Media Storage**
 - [ ] AWS S3 Configuration
 - ### **API**

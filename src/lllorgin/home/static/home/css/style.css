@@ -427,7 +427,7 @@
   }
 }
 
-/* Home Page Instagram Slider */
+/* Home Page Image Slider */
 .image-feeds-area {
   margin-bottom: 5rem;
 }
@@ -462,6 +462,10 @@
 
 .image-feed h3 {
   margin-top: unset;
+}
+
+.owl-carousel {
+  z-index: unset;
 }
 
 /* Sign In/Sign Up CSS */
