@@ -1,7 +1,7 @@
 # **THANK YOU**
 
 
-*[lll.org.in](https://lll.org.in) would like to credit awesome devs for making these exiting and enriching features for our website to look awesome! Cheers to you all!*
+*[live.laugh.love](https://live.laugh.love) would like to credit awesome devs for making these exiting and enriching features for our website to look awesome! Cheers to you all!*
 
 ## **COMPONENTS AND CREDITS**
 ### **HTML/CSS**

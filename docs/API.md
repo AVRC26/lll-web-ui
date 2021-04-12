@@ -1,4 +1,4 @@
-# **API Documentation** [lll.org.in](https://lll.org.in)
+# **API Documentation** [live.laugh.love](https://live.laugh.love)
 
 ## **HOME**
 ### **Account**
