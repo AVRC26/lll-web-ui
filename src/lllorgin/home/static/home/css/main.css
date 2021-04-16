@@ -2486,7 +2486,7 @@ body.search-is-visible {
 }
 
 .featured .entry:hover::before {
-   opacity: .6;
+   opacity: .4;
 }
 
 .featured .entry__content {

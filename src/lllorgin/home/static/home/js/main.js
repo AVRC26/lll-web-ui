@@ -395,6 +395,7 @@
             loop: true,
             margin: 10,
             autoplay: true,
+            autoplayHoverPause: true,
             autoplayTimeout: 8000,
             smartSpeed: 1000
         });
@@ -407,6 +408,7 @@
             loop: true,
             margin: 10,
             autoplay: true,
+            autoplayHoverPause: true,
             autoplayTimeout: 6000,
             smartSpeed: 1000
         });
@@ -418,6 +420,7 @@
             loop: true,
             margin: 10,
             autoplay: true,
+            autoplayHoverPause: true,
             autoplayTimeout: 12000,
             smartSpeed: 1000
         });
@@ -430,10 +433,27 @@
             loop: true,
             margin: 10,
             autoplay: true,
+            autoplayHoverPause: true,
             autoplayTimeout: 10000,
             smartSpeed: 1000
         });
     }
+
+    /* Studio Slide Focus Animations (3rd One is Active by Default)
+     * ------------------------------------------------------ */
+    var clStudioSlideFocus = function () {
+        var slideItemHoverAction = $(".slide-gallery-wrap .slide-item")
+
+        slideItemHoverAction.hover(
+            function(){
+                $(".slide-item:nth-child(3)").removeClass("slide-active");
+            }
+        );
+
+        $(".slide-gallery-wrap").on("mouseleave", function() {
+            $(".slide-item:nth-child(3)").addClass("slide-active");
+        });
+    };
 
     /* Confirm Popup
      * ------------------------------------------------------ */
@@ -1103,7 +1123,7 @@
         clAddSnap();
         clChooseCategory();
         clLightGallery();
-
+        clStudioSlideFocus();
     })();
 
 })(jQuery);
